@@ -1,7 +1,9 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="wrapper">
+    <div id="app">
+      <img alt="Vue logo" src="./assets/logo.png">
+      <HelloWorld msg="Welcome to Your Vue.js App"/>
+    </div>
   </div>
 </template>
 
@@ -10,6 +12,12 @@ import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
+  beforeCreate(){
+    document.querySelector('body').setAttribute('style', 'background:#1d2935')
+  },
+  beforeDestroy () {
+    document.querySelector('body').setAttribute('style', '')
+  },
   components: {
     HelloWorld
   }
@@ -17,12 +25,17 @@ export default {
 </script>
 
 <style>
+#wrapper {
+  background-color: #1d2935;
+  height: 100%;
+  width: 100%;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #8599ad;
   margin-top: 60px;
 }
 </style>
