@@ -1,23 +1,19 @@
 <template>
-  <div class="hello">
-    <h1>HelloWorld!</h1>
+  <div class="columns">
+    <div class = "column is-vcentered">
+      <h1>HelloWorld!</h1>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
+  name: 'mainPage',
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-wrapper {
-  background-color:   #0B003B;
-}
 h3 {
   margin: 40px 0 0;
 }
