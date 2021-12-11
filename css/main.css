@@ -69,7 +69,14 @@ nav.menu-btn {
   display: -ms-flexbox;
   display: flex;
   place-content: space-between;
-  margin-top: -10em;
+  margin-top: -5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.first-introduction .left-column {
+  padding-right: 10%;
 }
 
 .first-introduction span {
@@ -86,6 +93,19 @@ nav.menu-btn {
   letter-spacing: 0.15em;
 }
 
+.first-introduction .vl {
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+  border-left: 2px solid var(--neon-red);
+  height: 10em;
+  -webkit-box-shadow: var(--neon-red-effect);
+          box-shadow: var(--neon-red-effect);
+}
+
+.first-introduction .right-column {
+  padding-left: 10%;
+}
+
 .mobile-menu {
   cursor: pointer;
 }
@@ -97,8 +117,8 @@ ul {
 }
 
 section {
-  padding-top: 15em;
-  padding-bottom: 15em;
+  padding-top: 10em;
+  padding-bottom: 10em;
 }
 
 .hero {
@@ -116,7 +136,7 @@ section {
 }
 
 .contact {
-  margin: 0;
+  margin: -2em;
   background: #040215f9;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -124,11 +144,13 @@ section {
 }
 
 .contact .contact-info {
+  margin-right: 0.5em;
   padding: 0.5em;
   width: 50%;
 }
 
 .contact .final-consideration {
+  margin-left: 0.5em;
   padding: 0.5em;
   width: 50%;
 }
@@ -170,6 +192,13 @@ nav li a:hover {
   .mobile-menu,
   .mobile-menu-exit {
     display: none;
+  }
+  section {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+  .first-introduction {
+    padding-top: 3em;
   }
 }
 /*# sourceMappingURL=main.css.map */
