@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+ :root {
+    --neon-red: rgb(255, 49, 49);
+    --neon-red-effect: 0 0 2px rgba(255, 0, 0, 0.479), 0 0 5px rgba(255, 0, 0, 0.473), 0 0 10px rgb(255, 0, 0);
+}
+
+body {
+    background: #04021A;
+    margin: 2em;
+    font-family: 'Roboto';
+    color: #fff;
+}
+
+.navigation-bar {
+    background: #040215c7;
+    margin: -2em;
+    margin-bottom: 2em;
+    padding: 0.5em;
+    color: #fff;
+    .logo {
+        padding: 1em;
+        //round padding
+        border-radius: 25%;
+        cursor: pointer;
+        text-decoration: none;
+        color: var(--neon-red);
+        text-shadow: var(--neon-red-effect);
+    }
+}
+
+nav {
+    display: none;
+}
+
+.container {
+    display: flex;
+    place-content: space-between;
+}
+
+.mobile-menu {
+    cursor: pointer;
+}
