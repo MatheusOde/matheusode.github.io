@@ -27,6 +27,7 @@ nav {
     padding: 0.5em;
     color: #fff;
     .logo {
+        font-size: 1em;
         padding: 1em;
         //round padding
         border-radius: 25%;
@@ -64,6 +65,7 @@ nav.menu-btn {
     margin-top: -5em;
     align-items: center;
     .left-column {
+        font-size: 1.5em;
         padding-right: 10%;
     }
     span {
@@ -86,6 +88,7 @@ nav.menu-btn {
         box-shadow: var(--neon-red-effect);
     }
     .right-column {
+        font-size: 1em;
         padding-left: 10%;
     }
 }
@@ -111,6 +114,12 @@ section {
 
 .personal-info {
     .little-story {
+        h1 {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+        }
         span {
             color: var(--neon-green);
             text-shadow: var(--neon-green-effect);
@@ -119,6 +128,12 @@ section {
 }
 
 .projects {
+    h1 {
+        font-size: 1.5em;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 0.15em;
+    }
     span {
         color: var(--neon-blue);
         text-shadow: var(--neon-blue-effect);
