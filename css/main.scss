@@ -61,7 +61,11 @@ nav.menu-btn {
 .first-introduction {
     display: flex;
     place-content: space-between;
-    margin-top: -10em;
+    margin-top: -5em;
+    align-items: center;
+    .left-column {
+        padding-right: 10%;
+    }
     span {
         color: var(--neon-red);
         text-shadow: var(--neon-red-effect);
@@ -73,6 +77,16 @@ nav.menu-btn {
         margin-top: -0.5em;
         color: #7461ff7c;
         letter-spacing: 0.15em;
+    }
+    .vl {
+        padding-left: 0.1em;
+        padding-right: 0.1em;
+        border-left: 2px solid var(--neon-red);
+        height: 10em;
+        box-shadow: var(--neon-red-effect);
+    }
+    .right-column {
+        padding-left: 10%;
     }
 }
 
@@ -87,8 +101,8 @@ ul {
 }
 
 section {
-    padding-top: 15em;
-    padding-bottom: 15em;
+    padding-top: 10em;
+    padding-bottom: 10em;
 }
 
 .hero {
@@ -113,14 +127,16 @@ section {
 
 .contact {
     .contact-info {
+        margin-right: 0.5em;
         padding: 0.5em;
         width: 50%;
     }
     .final-consideration {
+        margin-left: 0.5em;
         padding: 0.5em;
         width: 50%;
     }
-    margin: 0;
+    margin: -2em;
     background: #040215f9;
     box-shadow: 0 0 10px rgba(0,
     0,
@@ -165,5 +181,12 @@ nav {
     .mobile-menu,
     .mobile-menu-exit {
         display: none;
+    }
+    section {
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+    .first-introduction {
+        padding-top: 3em;
     }
 }
