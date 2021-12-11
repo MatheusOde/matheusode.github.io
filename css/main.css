@@ -30,6 +30,7 @@ nav {
 }
 
 .navigation-bar .logo {
+  font-size: 1em;
   padding: 1em;
   border-radius: 25%;
   cursor: pointer;
@@ -76,6 +77,7 @@ nav.menu-btn {
 }
 
 .first-introduction .left-column {
+  font-size: 1.5em;
   padding-right: 10%;
 }
 
@@ -103,6 +105,7 @@ nav.menu-btn {
 }
 
 .first-introduction .right-column {
+  font-size: 1em;
   padding-left: 10%;
 }
 
@@ -125,9 +128,23 @@ section {
   text-align: center;
 }
 
+.personal-info .little-story h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
 .personal-info .little-story span {
   color: var(--neon-green);
   text-shadow: var(--neon-green-effect);
+}
+
+.projects h1 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.15em;
 }
 
 .projects span {
