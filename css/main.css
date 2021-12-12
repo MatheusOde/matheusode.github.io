@@ -111,6 +111,10 @@ nav.menu-btn {
   padding-left: 10%;
 }
 
+.first-introduction .right-column-small {
+  display: none;
+}
+
 .mobile-menu {
   cursor: pointer;
 }
@@ -231,6 +235,9 @@ nav li a:hover {
     margin-top: 3em;
     padding-top: 3em;
   }
+  .first-introduction .right-column-small {
+    display: none;
+  }
   .contact {
     margin: -5em;
     text-align: center;
@@ -241,6 +248,24 @@ nav li a:hover {
     grid-gap: 15em;
     padding-right: 10em;
     padding-left: 10em;
+  }
+}
+
+@media only screen and (max-width: 476px) {
+  .left-column {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .vl {
+    display: none;
+  }
+  .right-column {
+    display: none;
+  }
+  .right-column-small {
+    margin-top: 1em;
+    display: block;
   }
 }
 /*# sourceMappingURL=main.css.map */

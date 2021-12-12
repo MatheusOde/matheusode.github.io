@@ -93,6 +93,9 @@ nav.menu-btn {
         font-size: 1em;
         padding-left: 10%;
     }
+    .right-column-small {
+        display: none;
+    }
 }
 
 .mobile-menu {
@@ -217,6 +220,9 @@ nav {
     .first-introduction {
         margin-top: 3em;
         padding-top: 3em;
+        .right-column-small {
+            display: none;
+        }
     }
     .contact {
         margin: -5em;
@@ -227,5 +233,23 @@ nav {
         //make a gap in the most outer part of the grid
         padding-right: 10em;
         padding-left: 10em;
+    }
+}
+
+@media only screen and (max-width: 476px) {
+    .left-column {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .vl {
+        display: none;
+    }
+    .right-column {
+        display: none;
+    }
+    .right-column-small {
+        margin-top: 1em;
+        display: block;
     }
 }
