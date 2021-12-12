@@ -93,9 +93,10 @@ nav.menu-btn {
         font-size: 1em;
         padding-left: 10%;
     }
-    .right-column-small {
-        display: none;
-    }
+}
+
+.right-column-small {
+    display: none;
 }
 
 .mobile-menu {
@@ -220,9 +221,9 @@ nav {
     .first-introduction {
         margin-top: 3em;
         padding-top: 3em;
-        .right-column-small {
-            display: none;
-        }
+    }
+    .right-column-small {
+        display: none;
     }
     .contact {
         margin: -5em;
