@@ -13,6 +13,8 @@ body {
   margin: 2em;
   font-family: 'Roboto';
   color: #fff;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 nav {
