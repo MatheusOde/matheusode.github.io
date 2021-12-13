@@ -8,6 +8,7 @@
   --neon-blue-effect: 0 0 2px rgba(41, 41, 255, 0.788), 0 0 5px rgba(48, 48, 248, 0.719), 0 0 10px rgb(48, 48, 252);
 }
 
+/*body config for normal screens*/
 body {
   background: #08032e;
   margin: 2em;
@@ -17,6 +18,7 @@ body {
   overflow-x: hidden;
 }
 
+/* navigation area/menu */
 nav {
   display: none;
 }
@@ -105,6 +107,7 @@ section {
   text-shadow: var(--neon-red-effect);
 }
 
+/* end of navigation area */
 .hero {
   text-align: center;
 }

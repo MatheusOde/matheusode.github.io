@@ -8,6 +8,9 @@
     --neon-blue-effect: 0 0 2px rgba(41, 41, 255, 0.788), 0 0 5px rgba(48, 48, 248, 0.719), 0 0 10px rgb(48, 48, 252);
 }
 
+
+/*body config for normal screens*/
+
 body {
     background: #08032e;
     margin: 2em;
@@ -16,6 +19,9 @@ body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
+
+/* navigation area/menu */
 
 nav {
     display: none;
@@ -100,10 +106,14 @@ section {
     }
 }
 
+
+/* end of navigation area */
+
 .hero {
     text-align: center;
 }
 
+//first introduction area
 .first-introduction {
     display: flex;
     place-content: space-between;
@@ -138,6 +148,7 @@ section {
     }
 }
 
+//made for using site in really small screens
 .right-column-small {
     display: none;
 }
@@ -147,6 +158,7 @@ section {
     place-content: space-between;
 }
 
+//part 2 of the introduction, some personal info
 .personal-info {
     .little-story {
         h1 {
@@ -162,6 +174,7 @@ section {
     }
 }
 
+//part 3 of the introduction, some projects
 .projects {
     h1 {
         font-size: 1.5em;
@@ -175,6 +188,7 @@ section {
     }
 }
 
+//contact area
 .contact {
     .contact-info {
         margin-right: 0.5em;
@@ -195,6 +209,7 @@ section {
     padding: 1em 1em 1em 1em;
 }
 
+//mobile adaptation area
 @media only screen and (min-width: 768px) {
     body {
         max-width: 100%;
@@ -234,6 +249,7 @@ section {
     }
 }
 
+//really small screens adaptation area
 @media only screen and (max-width: 476px) {
     .first-introduction {
         .left-column {
