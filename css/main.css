@@ -21,6 +21,54 @@ nav {
   display: none;
 }
 
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  z-index: 999;
+  position: fixed;
+  width: 75%;
+  right: 0;
+  top: 0;
+  background: #0d044bf4;
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul.navigation-menu {
+  margin-top: 4em;
+}
+
+nav li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: .5em;
+  font-size: 2em;
+  text-align: right;
+}
+
+nav li a:hover {
+  color: var(--neon-red);
+  text-shadow: var(--neon-red-effect);
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding-top: 10em;
+  padding-bottom: 10em;
+}
+
 .navigation-bar {
   background: #070426f9;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -43,6 +91,7 @@ nav {
 
 .navigation-bar .mobile-menu {
   padding: 1em;
+  cursor: pointer;
 }
 
 .navigation-bar .mobile-menu-exit {
@@ -56,15 +105,8 @@ nav {
   text-shadow: var(--neon-red-effect);
 }
 
-nav.menu-btn {
-  display: block;
-}
-
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  place-content: space-between;
+.hero {
+  text-align: center;
 }
 
 .first-introduction {
@@ -115,23 +157,11 @@ nav.menu-btn {
   display: none;
 }
 
-.mobile-menu {
-  cursor: pointer;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-section {
-  padding-top: 10em;
-  padding-bottom: 10em;
-}
-
-.hero {
-  text-align: center;
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
 }
 
 .personal-info .little-story h1 {
@@ -178,39 +208,6 @@ section {
   width: 50%;
 }
 
-nav.menu-btn {
-  display: block;
-}
-
-nav {
-  z-index: 999;
-  position: fixed;
-  width: 75%;
-  right: 0;
-  top: 0;
-  background: #0d044bf4;
-  height: 100vh;
-  padding: 1em;
-}
-
-nav ul.navigation-menu {
-  margin-top: 4em;
-}
-
-nav li a {
-  display: block;
-  text-decoration: none;
-  color: #fff;
-  padding: .5em;
-  font-size: 2em;
-  text-align: right;
-}
-
-nav li a:hover {
-  color: var(--neon-red);
-  text-shadow: var(--neon-red-effect);
-}
-
 @media only screen and (min-width: 768px) {
   body {
     max-width: 100%;
@@ -252,15 +249,15 @@ nav li a:hover {
 }
 
 @media only screen and (max-width: 476px) {
-  .left-column {
+  .first-introduction .left-column {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
   }
-  .vl {
+  .first-introduction .vl {
     display: none;
   }
-  .right-column {
+  .first-introduction .right-column {
     display: none;
   }
   .right-column-small {
