@@ -182,6 +182,14 @@ section {
         font-weight: bold;
         letter-spacing: 0.15em;
     }
+    ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin-right: -10px;
+    }
+    li {
+        margin-right: 10px;
+    }
     span {
         color: var(--neon-blue);
         text-shadow: var(--neon-blue-effect);

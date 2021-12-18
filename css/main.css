@@ -186,6 +186,18 @@ section {
   letter-spacing: 0.15em;
 }
 
+.projects ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-right: -10px;
+}
+
+.projects li {
+  margin-right: 10px;
+}
+
 .projects span {
   color: var(--neon-blue);
   text-shadow: var(--neon-blue-effect);
