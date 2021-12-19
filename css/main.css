@@ -113,7 +113,6 @@ section {
 }
 
 .first-introduction {
-  opacity: 0.2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

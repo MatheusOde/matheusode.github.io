@@ -1,12 +1,9 @@
-$(window).scroll(function() {
-    var scrollTop = $(this).scrollTop();
+const mobileBtn = document.querySelector('#mobile-cta');
+const menuLinks = document.querySelector("nav");
 
-    $('.body').css({
-        opacity: function() {
-            var elementHeight = $(this).height(),
-                opacity = ((1 - (elementHeight - scrollTop) / elementHeight) * 0.8) + 0.2;
+const mobileMenu = () => {
+    mobileBtn.classList.toggle('active');
+    menuLinks.classList.toggle('show');
+}
 
-            return opacity;
-        }
-    });
-});
+mobileBtn.addEventListener('click', mobileMenu);
