@@ -1,9 +1,9 @@
-const mobileBtn = document.querySelector('#mobile-cta');
-const menuLinks = document.querySelector("nav");
-
-const mobileMenu = () => {
-    mobileBtn.classList.toggle('active');
-    menuLinks.classList.toggle('show');
-}
-
-mobileBtn.addEventListener('click', mobileMenu);
+const mobileBtn = document.getElementById("mobile-cta");
+const nav = document.querySelector("nav");
+const mobileBtnExit = document.getElementById("mobile-exit");
+mobileBtn.addEventListener("click", () => {
+    nav.classList.add("menu-btn");
+});
+mobileBtnExit.addEventListener("click", () => {
+    nav.classList.remove("menu-btn");
+});
