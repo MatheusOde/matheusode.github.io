@@ -202,16 +202,21 @@ section {
         padding-bottom: 2em;
     }
     ul {
+        margin: auto;
         display: grid;
         grid-template-columns: 33% 33% 33%;
+        align-items: center;
         .imagesGrid {
             p {
                 font-size: 1em;
                 vertical-align: text-bottom;
+                max-width: 15em;
             }
             img {
-                max-width: 15em;
-                max-height: 15em;
+                image-rendering: optimizeSpeed;
+                object-fit: contain;
+                width: 15em;
+                height: 12em;
             }
         }
     }

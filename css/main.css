@@ -217,20 +217,28 @@ section {
 }
 
 .projects ul {
+  margin: auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 33% 33% 33%;
       grid-template-columns: 33% 33% 33%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projects ul .imagesGrid p {
   font-size: 1em;
   vertical-align: text-bottom;
+  max-width: 15em;
 }
 
 .projects ul .imagesGrid img {
-  max-width: 15em;
-  max-height: 15em;
+  image-rendering: optimizeSpeed;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 15em;
+  height: 12em;
 }
 
 .projects span {
