@@ -56,11 +56,6 @@ nav li a:hover {
   text-shadow: var(--neon-red-effect);
 }
 
-nav.menu-btn {
-  -webkit-transform: position;
-          transform: position;
-}
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -90,14 +85,20 @@ section {
   text-decoration: none;
   color: var(--neon-red);
   text-shadow: var(--neon-red-effect);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
 .navigation-bar .mobile-menu {
   padding: 1em;
   cursor: pointer;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
 .navigation-bar .mobile-menu-exit {
+  -webkit-transition: 2s;
+  transition: 2s;
   padding: 1em;
   float: right;
   cursor: pointer;
@@ -106,6 +107,31 @@ section {
 .navigation-bar .mobile-menu-exit:hover {
   color: var(--neon-red);
   text-shadow: var(--neon-red-effect);
+}
+
+.menu-btn {
+  display: none;
+}
+
+.menu-btn:active {
+  -webkit-transform: translateX(50vw);
+          transform: translateX(50vw);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.mobile-menu:hover {
+  -webkit-transform: scale3d(1.2, 1.4, 1.2);
+          transform: scale3d(1.2, 1.4, 1.2);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.logo:hover {
+  -webkit-transform: scale3d(1.2, 1.4, 1.2);
+          transform: scale3d(1.2, 1.4, 1.2);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
 /* end of navigation area */
