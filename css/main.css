@@ -220,13 +220,29 @@ section {
 .projects ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-columns: (20em)[2];
+      grid-template-columns: repeat(2, 20em);
   margin-right: -10px;
 }
 
-.projects li {
+.projects ul li {
   margin-right: 10px;
+  padding: 1em;
+  margin: auto;
+}
+
+.projects ul li p {
+  font-size: 1em;
+  margin-top: auto;
+  vertical-align: text-bottom;
+}
+
+.projects ul li img {
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 15em;
+  max-height: 15em;
 }
 
 .projects span {
@@ -315,6 +331,13 @@ section {
     grid-gap: 15em;
     padding-right: 10em;
     padding-left: 10em;
+  }
+}
+
+@media only screen and (max-width: 665px) {
+  ul {
+    -ms-grid-columns: (20em)[1];
+        grid-template-columns: repeat(1, 20em);
   }
 }
 
