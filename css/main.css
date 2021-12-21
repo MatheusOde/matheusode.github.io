@@ -57,7 +57,8 @@ nav li a:hover {
 }
 
 nav.menu-btn {
-  display: block;
+  -webkit-transform: position;
+          transform: position;
 }
 
 ul {
