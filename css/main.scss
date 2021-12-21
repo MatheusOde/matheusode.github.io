@@ -245,6 +245,11 @@ section {
     0,
     0.5);
     padding: 1em 1em 1em 1em;
+    img {
+        text-emphasis: none;
+        color: var(--neon-red);
+        text-shadow: var(--neon-red-effect);
+    }
 }
 
 @media only screen and (max-width: 1148px) {
