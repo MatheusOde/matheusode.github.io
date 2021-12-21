@@ -112,11 +112,6 @@ section {
     display: none;
 }
 
-.menu-btn:active {
-    transform: translateX(50vw);
-    transition: 2s;
-}
-
 .mobile-menu:hover {
     transform: scale3d(1.2, 1.4, 1.2);
     transition: 0.25s;
@@ -197,28 +192,24 @@ section {
 
 //part 3 of the introduction, some projects
 .projects {
+    display: block;
+    margin-bottom: 4em;
     h1 {
         font-size: 1.5em;
         text-transform: uppercase;
         font-weight: bold;
         letter-spacing: 0.15em;
+        padding-bottom: 2em;
     }
     ul {
         display: grid;
-        grid-template-columns: repeat(2, 20em);
-        margin-right: -10px;
-        li {
-            margin-right: 10px;
-            padding: 1em;
-            margin: auto;
+        grid-template-columns: 33% 33% 33%;
+        .imagesGrid {
             p {
                 font-size: 1em;
-                margin-top: auto;
                 vertical-align: text-bottom;
             }
             img {
-                margin: auto;
-                object-fit: cover;
                 max-width: 15em;
                 max-height: 15em;
             }
@@ -249,6 +240,15 @@ section {
     0,
     0.5);
     padding: 1em 1em 1em 1em;
+}
+
+@media only screen and (max-width: 1148px) {
+    .projects {
+        ul {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+    }
 }
 
 //mobile adaptation area
@@ -312,8 +312,15 @@ section {
 }
 
 @media only screen and (max-width: 665px) {
-    ul {
-        grid-template-columns: repeat(1, 20em);
+    .projects {
+        ul {
+            display: block;
+            .imagesGrid {
+                img {
+                    align-items: center;
+                }
+            }
+        }
     }
 }
 
