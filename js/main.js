@@ -16,6 +16,6 @@ window.addEventListener('scroll', (e) => {
     scrollTop = window.pageYOffset;
     firstIntroHeight = firstIntro.offsetHeight;
     personalInfoHeight = personalInfo.offsetHeight;
-    firstIntro.style.opacity = 1 - scrollTop / firstIntroHeight * 0.5;
-    personalInfo.style.opacity = 1 - (scrollTop - firstIntroHeight * 2) / personalInfoHeight * 0.5;
+    firstIntro.style.opacity = 1 - (scrollTop * 1.1) / firstIntroHeight * 0.4;
+    personalInfo.style.opacity = 1 - (scrollTop - firstIntroHeight * 3) / personalInfoHeight * 0.4;
 });

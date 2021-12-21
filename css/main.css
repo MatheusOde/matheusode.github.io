@@ -89,6 +89,10 @@ section {
   transition: 0.25s;
 }
 
+.navigation-bar .navigation-menu-big {
+  display: none;
+}
+
 .navigation-bar .mobile-menu {
   padding: 1em;
   cursor: pointer;
@@ -265,6 +269,30 @@ section {
   }
   .navigation-bar .logo {
     font-size: 1.5em;
+  }
+  .navigation-bar .navigation-menu-big {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navigation-bar .navigation-menu-big li {
+    grid: 0;
+    padding: 1em;
+    margin: auto;
+  }
+  .navigation-bar .navigation-menu-big li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-align: right;
+    -webkit-transition: 00.15s;
+    transition: 00.15s;
+  }
+  .navigation-bar .navigation-menu-big li a:hover {
+    color: var(--neon-red);
+    text-shadow: var(--neon-red-effect);
+    -webkit-transform: scale3d(1.5, 1.5, 1.5);
+            transform: scale3d(1.5, 1.5, 1.5);
   }
   .navigation-bar .mobile-menu,
   .navigation-bar .mobile-menu-exit {

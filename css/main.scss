@@ -88,6 +88,9 @@ section {
         text-shadow: var(--neon-red-effect);
         transition: 0.25s;
     }
+    .navigation-menu-big {
+        display: none;
+    }
     .mobile-menu {
         padding: 1em;
         cursor: pointer;
@@ -250,6 +253,26 @@ section {
         margin: -5em;
         .logo {
             font-size: 1.5em;
+        }
+        .navigation-menu-big {
+            display: flex;
+            li {
+                grid: 0;
+                padding: 1em;
+                margin: auto;
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: #fff;
+                    text-align: right;
+                    transition: 00.15s;
+                    &:hover {
+                        color: var(--neon-red);
+                        text-shadow: var(--neon-red-effect);
+                        transform: scale3d(1.5, 1.5, 1.5);
+                    }
+                }
+            }
         }
         .mobile-menu,
         .mobile-menu-exit {
