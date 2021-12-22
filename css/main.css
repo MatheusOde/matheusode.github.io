@@ -68,12 +68,13 @@ section {
 }
 
 .navigation-bar {
+  position: fixed;
+  width: 100%;
   background: #070426f9;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin: -2em;
-  margin-bottom: 2em;
-  padding: 0.5em;
+  margin-bottom: 1em;
   color: #fff;
 }
 
