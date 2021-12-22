@@ -242,18 +242,19 @@ section {
   margin-right: auto;
   margin-top: auto;
   font-size: 1em;
-  max-width: 15em;
+  max-width: 16em;
 }
 
 .projects ul .imagesGrid img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 2em;
   image-rendering: optimizeSpeed;
   -o-object-fit: contain;
      object-fit: contain;
-  width: 15em;
-  height: 12em;
+  width: 16em;
+  height: 9em;
 }
 
 .projects span {
@@ -337,8 +338,7 @@ section {
     -webkit-transform: scale3d(1.5, 1.5, 1.5);
             transform: scale3d(1.5, 1.5, 1.5);
   }
-  .navigation-bar .mobile-menu,
-  .navigation-bar .mobile-menu-exit {
+  .navigation-bar .mobile-menu {
     display: none;
   }
   .first-introduction {
@@ -363,12 +363,33 @@ section {
 
 @media only screen and (max-width: 665px) {
   .projects ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  .projects ul .imagesGrid p {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    font-size: 1em;
+    max-width: 12em;
   }
   .projects ul .imagesGrid img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 12em;
+    height: 6em;
+  }
+  .projects ul .imagesGrid a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    font-size: 1em;
+    max-width: 10em;
   }
 }
 
@@ -387,6 +408,32 @@ section {
   .right-column-small {
     margin-top: 1em;
     display: block;
+  }
+  .projects ul {
+    display: block;
+  }
+  .projects ul .imagesGrid p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    font-size: 1em;
+    max-width: 16em;
+  }
+  .projects ul .imagesGrid img {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 16em;
+    height: 9em;
+  }
+  .projects ul .imagesGrid a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    font-size: 1em;
+    max-width: 16em;
   }
 }
 /*# sourceMappingURL=main.css.map */

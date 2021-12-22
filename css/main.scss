@@ -220,16 +220,17 @@ section {
                 margin-right: auto;
                 margin-top: auto;
                 font-size: 1em;
-                max-width: 15em;
+                max-width: 16em;
             }
             img {
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
+                padding-bottom: 2em;
                 image-rendering: optimizeSpeed;
                 object-fit: contain;
-                width: 15em;
-                height: 12em;
+                width: 16em;
+                height: 9em;
             }
         }
     }
@@ -310,8 +311,7 @@ section {
                 }
             }
         }
-        .mobile-menu,
-        .mobile-menu-exit {
+        .mobile-menu {
             display: none;
         }
     }
@@ -337,10 +337,29 @@ section {
 @media only screen and (max-width: 665px) {
     .projects {
         ul {
-            display: block;
+            display: grid;
+            grid-template-columns: 50% 50%;
             .imagesGrid {
+                p {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: auto;
+                    font-size: 1em;
+                    max-width: 12em;
+                }
                 img {
                     align-items: center;
+                    width: 12em;
+                    height: 6em;
+                }
+                a {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: auto;
+                    font-size: 1em;
+                    max-width: 10em;
                 }
             }
         }
@@ -365,5 +384,33 @@ section {
     .right-column-small {
         margin-top: 1em;
         display: block;
+    }
+    .projects {
+        ul {
+            display: block;
+            .imagesGrid {
+                p {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: auto;
+                    font-size: 1em;
+                    max-width: 16em;
+                }
+                img {
+                    align-items: center;
+                    width: 16em;
+                    height: 9em;
+                }
+                a {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: auto;
+                    font-size: 1em;
+                    max-width: 16em;
+                }
+            }
+        }
     }
 }
