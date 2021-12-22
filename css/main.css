@@ -234,6 +234,7 @@ section {
   margin-top: auto;
   font-size: 1em;
   max-width: 15em;
+  padding-top: 2em;
 }
 
 .projects ul .imagesGrid a {
@@ -249,12 +250,13 @@ section {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 2em;
   image-rendering: optimizeSpeed;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 16em;
   height: 9em;
+  -webkit-box-shadow: var(--neon-blue-effect);
+          box-shadow: var(--neon-blue-effect);
 }
 
 .projects span {
