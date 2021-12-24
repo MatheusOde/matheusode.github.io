@@ -265,30 +265,36 @@ section {
 }
 
 .contact {
-  margin: -2em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  max-height: -webkit-min-content;
+  max-height: -moz-min-content;
+  max-height: min-content;
   background: #05021df9;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  padding: 1em 1em 1em 1em;
+  padding-bottom: -25vh;
+  margin-bottom: -15vh;
+  margin-left: -10vw;
+  margin-right: -10vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
-.contact .contact-info {
-  margin-right: 0.5em;
-  padding: 0.5em;
-  width: 50%;
+.contact .smiley-face {
+  font-size: 4em;
+  color: #05021df9;
+  text-shadow: 0 0 5px rgba(255, 0, 0, 0.671), 0 0 9px rgba(255, 0, 0, 0.637), 0 0 20px red, 0 0 40px red;
+  text-align: center;
+  -webkit-transition: 3s;
+  transition: 3s;
 }
 
-.contact .final-consideration {
-  margin-left: 0.5em;
-  padding: 0.5em;
-  width: 50%;
-}
-
-.contact img {
-  -webkit-text-emphasis: none;
-          text-emphasis: none;
+.contact .smiley-face:hover {
+  text-shadow: 0 0 20px red, 0 0 20px red, 0 0 35px rgba(255, 0, 0, 0.966), 0 0 35px red, 0 0 60px red, 0 0 60px red, 0 0 250px red, 0 0 500px red, 0 0 1000px red;
   color: var(--neon-red);
-  text-shadow: var(--neon-red-effect);
 }
 
 @media only screen and (max-width: 1148px) {
@@ -349,17 +355,6 @@ section {
   }
   .right-column-small {
     display: none;
-  }
-  .contact {
-    margin: -5em;
-    text-align: center;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    grid-gap: 15em;
-    padding-right: 10em;
-    padding-left: 10em;
   }
 }
 
@@ -436,6 +431,12 @@ section {
     margin-top: auto;
     font-size: 1em;
     max-width: 16em;
+  }
+  .contact {
+    display: block;
+  }
+  .contact .smiley-face {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
