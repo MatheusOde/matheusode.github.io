@@ -19,15 +19,12 @@ body {
 }
 
 /* navigation area/menu */
-nav {
-  display: none;
-}
-
 nav.menu-btn {
   display: block;
 }
 
 nav {
+  display: none;
   z-index: 999;
   position: fixed;
   width: 75%;
@@ -97,14 +94,13 @@ section {
 .navigation-bar .mobile-menu {
   padding: 1em;
   cursor: pointer;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
+  fill: var(--neon-red);
 }
 
 .navigation-bar .mobile-menu-exit {
-  -webkit-transition: 2s;
-  transition: 2s;
-  padding: 1em;
+  font-size: 2rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
   float: right;
   cursor: pointer;
 }
@@ -114,13 +110,10 @@ section {
   text-shadow: var(--neon-red-effect);
 }
 
-.menu-btn {
-  display: none;
-}
-
 .mobile-menu:hover {
   -webkit-transform: scale3d(1.2, 1.4, 1.2);
           transform: scale3d(1.2, 1.4, 1.2);
+  padding: -2em;
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
@@ -293,7 +286,7 @@ section {
 }
 
 .contact .smiley-face:hover {
-  text-shadow: 0 0 20px red, 0 0 20px red, 0 0 35px rgba(255, 0, 0, 0.966), 0 0 35px red, 0 0 60px red, 0 0 60px red, 0 0 250px red, 0 0 500px red, 0 0 1000px red;
+  text-shadow: 0 0 20px red, 0 0 20px red, 0 0 35px rgba(255, 0, 0, 0.966), 0 0 35px red, 0 0 60px red, 0 0 60px red, 0 0 250px red, 0 0 400px red, 0 0 125px red;
   color: var(--neon-red);
 }
 

@@ -1,6 +1,7 @@
 const mobileBtn = document.getElementById("mobile-cta");
 const nav = document.querySelector("nav");
 const mobileBtnExit = document.getElementById("mobile-exit");
+
 mobileBtn.addEventListener("click", () => {
     nav.classList.toggle("menu-btn");
 });
@@ -26,21 +27,25 @@ const projects = document.getElementById('project');
 const contact = document.getElementById('contact');
 home.addEventListener('click', () => {
     window.scrollTo(0, 0);
+    nav.classList.remove("menu-btn");
 });
 about.addEventListener('click', () => {
     setTimeout(function() {
         window.scrollTo(0, 700);
     }, 2);
+    nav.classList.remove("menu-btn");
 });
 projects.addEventListener('click', () => {
     setTimeout(function() {
         window.scrollTo(0, 1200);
     }, 2);
+    nav.classList.remove("menu-btn");
 });
 contact.addEventListener('click', () => {
     setTimeout(function() {
         window.scrollTo(0, 2000);
     }, 2);
+    nav.classList.remove("menu-btn");
 });
 
 
@@ -50,19 +55,23 @@ const projects2 = document.getElementById('project2');
 const contact2 = document.getElementById('contact2');
 home2.addEventListener('click', () => {
     window.scrollTo(0, 0);
+    nav.classList.remove("menu-btn");
 });
 about2.addEventListener('click', () => {
     setTimeout(function() {
         window.scrollTo(0, 500);
     }, 2);
+    nav.classList.remove("menu-btn");
 });
 projects2.addEventListener('click', () => {
     setTimeout(function() {
         window.scrollTo(0, 1000);
     }, 2);
+    nav.classList.remove("menu-btn");
 });
 contact2.addEventListener('click', () => {
     setTimeout(function() {
         window.scrollTo(0, 2000);
     }, 2);
+    nav.classList.remove("menu-btn");
 });
