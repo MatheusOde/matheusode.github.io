@@ -24,6 +24,9 @@ body {
 /* navigation area/menu */
 
 nav.menu-btn {
+    //make it over other content
+    position: fixed;
+    z-index: 1;
     display: block;
 }
 
@@ -75,6 +78,7 @@ section {
     margin: -2em;
     margin-bottom: 1em;
     color: #fff;
+    z-index: 1;
     .logo {
         font-size: 1em;
         padding: 1em;
@@ -281,6 +285,9 @@ section {
     section {
         margin-left: 3em;
         margin-right: 3em;
+    }
+    nav.menu-btn {
+        display: none;
     }
     .navigation-bar {
         margin: -5em;
