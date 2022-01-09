@@ -26,24 +26,36 @@ const about = document.getElementById('about');
 const projects = document.getElementById('project');
 const contact = document.getElementById('contact');
 home.addEventListener('click', () => {
-    window.scrollTo(0, 0);
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
     nav.classList.remove("menu-btn");
 });
 about.addEventListener('click', () => {
     setTimeout(function() {
-        window.scrollTo(0, 700);
+        window.scrollTo({
+            top: 500,
+            behavior: "smooth"
+        });
     }, 2);
     nav.classList.toggle("menu-btn");
 });
 projects.addEventListener('click', () => {
     setTimeout(function() {
-        window.scrollTo(0, 1200);
+        window.scrollTo({
+            top: 1200,
+            behavior: "smooth"
+        });
     }, 2);
     nav.classList.toggle("menu-btn");
 });
 contact.addEventListener('click', () => {
     setTimeout(function() {
-        window.scrollTo(0, 2000);
+        window.scrollTo({
+            top: 2000,
+            behavior: "smooth"
+        });
     }, 2);
     nav.classList.toggle("menu-btn");
 });
@@ -54,24 +66,36 @@ const about2 = document.getElementById('about2');
 const projects2 = document.getElementById('project2');
 const contact2 = document.getElementById('contact2');
 home2.addEventListener('click', () => {
-    window.scrollTo(0, 0);
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
     nav.classList.toggle("menu-btn");
 });
 about2.addEventListener('click', () => {
     setTimeout(function() {
-        window.scrollTo(0, 500);
+        window.scrollTo({
+            top: 500,
+            behavior: "smooth"
+        });
     }, 2);
     nav.classList.toggle("menu-btn");
 });
 projects2.addEventListener('click', () => {
     setTimeout(function() {
-        window.scrollTo(0, 1000);
+        window.scrollTo({
+            top: 1200,
+            behavior: "smooth"
+        });
     }, 2);
     nav.classList.toggle("menu-btn");
 });
 contact2.addEventListener('click', () => {
     setTimeout(function() {
-        window.scrollTo(0, 2000);
+        window.scrollTo({
+            top: 2000,
+            behavior: "smooth"
+        });
     }, 2);
     nav.classList.toggle("menu-btn");
 });
