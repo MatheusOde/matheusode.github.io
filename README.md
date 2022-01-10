@@ -7,8 +7,8 @@ It is also a place for me to learn and implement new things
 
 ## How to use deploy
 Simply type
-    chmod +x deploy.sh
+    `chmod +x deploy.sh`
 Or whatever is the name for the file you made
 Then to execute
-    ./deploy.sh (argument1) (argument2)
+    `./deploy.sh (argument1) (argument2)`
 You can deploy with infinite arguments. They'll be the name of the commit
