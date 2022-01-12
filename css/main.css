@@ -8,6 +8,16 @@
   --neon-blue-effect: 0 0 2px rgba(41, 41, 255, 0.788), 0 0 5px rgba(48, 48, 248, 0.719), 0 0 10px rgb(48, 48, 252);
 }
 
+html {
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+html section {
+  scroll-snap-align: center;
+}
+
 /*body config for normal screens*/
 body {
   background: #08032e;

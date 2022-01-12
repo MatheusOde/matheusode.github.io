@@ -28,7 +28,6 @@ const contact = document.getElementById('contact');
 home.addEventListener('click', () => {
     window.scrollTo({
         top: 0,
-        behavior: "smooth"
     });
     nav.classList.remove("menu-btn");
 });
@@ -36,7 +35,6 @@ about.addEventListener('click', () => {
     setTimeout(function() {
         window.scrollTo({
             top: 500,
-            behavior: "smooth"
         });
     }, 2);
     nav.classList.toggle("menu-btn");
@@ -45,7 +43,6 @@ projects.addEventListener('click', () => {
     setTimeout(function() {
         window.scrollTo({
             top: 1200,
-            behavior: "smooth"
         });
     }, 2);
     nav.classList.toggle("menu-btn");
@@ -54,7 +51,6 @@ contact.addEventListener('click', () => {
     setTimeout(function() {
         window.scrollTo({
             top: 2000,
-            behavior: "smooth"
         });
     }, 2);
     nav.classList.toggle("menu-btn");
@@ -68,7 +64,6 @@ const contact2 = document.getElementById('contact2');
 home2.addEventListener('click', () => {
     window.scrollTo({
         top: 0,
-        behavior: "smooth"
     });
     nav.classList.toggle("menu-btn");
 });
@@ -76,7 +71,6 @@ about2.addEventListener('click', () => {
     setTimeout(function() {
         window.scrollTo({
             top: 500,
-            behavior: "smooth"
         });
     }, 2);
     nav.classList.toggle("menu-btn");
@@ -85,7 +79,6 @@ projects2.addEventListener('click', () => {
     setTimeout(function() {
         window.scrollTo({
             top: 1200,
-            behavior: "smooth"
         });
     }, 2);
     nav.classList.toggle("menu-btn");
@@ -94,7 +87,6 @@ contact2.addEventListener('click', () => {
     setTimeout(function() {
         window.scrollTo({
             top: 2000,
-            behavior: "smooth"
         });
     }, 2);
     nav.classList.toggle("menu-btn");
