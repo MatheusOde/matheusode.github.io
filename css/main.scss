@@ -8,6 +8,9 @@
     --neon-blue-effect: 0 0 2px rgba(41, 41, 255, 0.788), 0 0 5px rgba(48, 48, 248, 0.719), 0 0 10px rgb(48, 48, 252);
 }
 
+
+/*basic html settings*/
+
 html {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
@@ -17,7 +20,7 @@ html {
 }
 
 
-/*body config for normal screens*/
+/*general config for normal screens*/
 
 body {
     background: #08032e;
@@ -28,15 +31,23 @@ body {
     overflow-x: hidden;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
+
+.hero {
+    text-align: center;
+}
+
 
 /* navigation area/menu */
-
-nav.menu-btn {
-    //make it over other content
-    position: fixed;
-    z-index: 1;
-    display: block;
-}
 
 nav {
     display: none;
@@ -67,15 +78,11 @@ nav {
     }
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-section {
-    padding-top: 10em;
-    padding-bottom: 10em;
+nav.menu-btn {
+    //make it over other content
+    position: fixed;
+    z-index: 1;
+    display: block;
 }
 
 .navigation-bar {
@@ -133,10 +140,6 @@ section {
 
 /* end of navigation area */
 
-.hero {
-    text-align: center;
-}
-
 //first introduction area
 .first-introduction {
     display: flex;
@@ -170,16 +173,6 @@ section {
         font-size: 1em;
         padding-left: 10%;
     }
-}
-
-//made for using site in really small screens
-.right-column-small {
-    display: none;
-}
-
-.container {
-    display: flex;
-    place-content: space-between;
 }
 
 //part 2 of the introduction, some personal info
@@ -276,16 +269,7 @@ section {
     }
 }
 
-@media only screen and (max-width: 1148px) {
-    .projects {
-        ul {
-            display: grid;
-            grid-template-columns: 50% 50%;
-        }
-    }
-}
-
-//mobile adaptation area
+//min width adaptations
 @media only screen and (min-width: 768px) {
     body {
         max-width: 100%;
@@ -340,9 +324,19 @@ section {
     }
 }
 
+//start of the max-width adaptations
+@media only screen and (max-width: 1148px) {
+    .projects {
+        ul {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+    }
+}
+
 @media only screen and (max-width: 665px) {
     html {
-        scroll-snap-type: y proximity;
+        scroll-snap-type: none;
     }
     .projects {
         scroll-snap-align: start;
@@ -376,7 +370,16 @@ section {
     }
 }
 
-//really small screens adaptation area
+//really small screens adaptations
+.right-column-small {
+    display: none;
+}
+
+.container {
+    display: flex;
+    place-content: space-between;
+}
+
 @media only screen and (max-width: 476px) {
     .first-introduction {
         .left-column {

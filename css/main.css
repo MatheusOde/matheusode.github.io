@@ -8,6 +8,7 @@
   --neon-blue-effect: 0 0 2px rgba(41, 41, 255, 0.788), 0 0 5px rgba(48, 48, 248, 0.719), 0 0 10px rgb(48, 48, 252);
 }
 
+/*basic html settings*/
 html {
   scroll-behavior: smooth;
   -ms-scroll-snap-type: y mandatory;
@@ -18,7 +19,7 @@ html section {
   scroll-snap-align: center;
 }
 
-/*body config for normal screens*/
+/*general config for normal screens*/
 body {
   background: #08032e;
   margin: 2em;
@@ -28,13 +29,22 @@ body {
   overflow-x: hidden;
 }
 
-/* navigation area/menu */
-nav.menu-btn {
-  position: fixed;
-  z-index: 1;
-  display: block;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
+section {
+  padding-top: 10em;
+  padding-bottom: 10em;
+}
+
+.hero {
+  text-align: center;
+}
+
+/* navigation area/menu */
 nav {
   display: none;
   z-index: 999;
@@ -65,15 +75,10 @@ nav li a:hover {
   text-shadow: var(--neon-red-effect);
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-section {
-  padding-top: 10em;
-  padding-bottom: 10em;
+nav.menu-btn {
+  position: fixed;
+  z-index: 1;
+  display: block;
 }
 
 .navigation-bar {
@@ -139,10 +144,6 @@ section {
 }
 
 /* end of navigation area */
-.hero {
-  text-align: center;
-}
-
 .first-introduction {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,17 +186,6 @@ section {
 .first-introduction .right-column {
   font-size: 1em;
   padding-left: 10%;
-}
-
-.right-column-small {
-  display: none;
-}
-
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  place-content: space-between;
 }
 
 .personal-info {
@@ -308,15 +298,6 @@ section {
   color: var(--neon-red);
 }
 
-@media only screen and (max-width: 1148px) {
-  .projects ul {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
-  }
-}
-
 @media only screen and (min-width: 768px) {
   body {
     max-width: 100%;
@@ -375,10 +356,19 @@ section {
   }
 }
 
+@media only screen and (max-width: 1148px) {
+  .projects ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+}
+
 @media only screen and (max-width: 665px) {
   html {
-    -ms-scroll-snap-type: y proximity;
-        scroll-snap-type: y proximity;
+    -ms-scroll-snap-type: none;
+        scroll-snap-type: none;
   }
   .projects {
     scroll-snap-align: start;
@@ -412,6 +402,17 @@ section {
     font-size: 1em;
     max-width: 10em;
   }
+}
+
+.right-column-small {
+  display: none;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
 }
 
 @media only screen and (max-width: 476px) {
