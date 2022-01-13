@@ -12,13 +12,35 @@ mobileBtnExit.addEventListener("click", () => {
 let scrollTop = 0;
 const firstIntro = document.querySelector('.first-introduction');
 const personalInfo = document.querySelector('.little-story');
+const project = document.querySelector('.projects');
+
+personalInfo.style.opacity = 0;
+project.style.opacity = 0;
 
 window.addEventListener('scroll', (e) => {
     scrollTop = window.pageYOffset;
     firstIntroHeight = firstIntro.offsetHeight;
     personalInfoHeight = personalInfo.offsetHeight;
+    projectHeight = project.offsetHeight;
     firstIntro.style.opacity = 1 - (scrollTop * 1.1) / firstIntroHeight * 0.4;
-    personalInfo.style.opacity = 1 - (scrollTop - firstIntroHeight * 3) / personalInfoHeight * 0.4;
+    personalInfo.style.opacity = 0 + scrollTop * 1.1 / personalInfoHeight * 0.4;
+    var w = document.documentElement.clientWidth || window.innerWidth;
+    if (personalInfoHeight < scrollTop) {
+        personalInfo.style.opacity = 1 - (scrollTop - firstIntroHeight * 3) / personalInfoHeight * 0.4;
+        if (w <= 665) {
+            personalInfo.style.opacity = 1.1 - (scrollTop - firstIntroHeight * 3) / personalInfoHeight * 0.4;
+        }
+    }
+    project.style.opacity = 0 + scrollTop * 1.1 / projectHeight * 0.4;
+    if (projectHeight < scrollTop) {
+        project.style.opacity = 1 - ((scrollTop * 0.2) - personalInfoHeight * 3) / projectHeight;
+    }
+    if (w <= 665) {
+        project.style.opacity = ((scrollTop * 2 - personalInfoHeight * 1.1) / projectHeight) - 0.4;
+        if (projectHeight < scrollTop) {
+            project.style.opacity = 1 - ((scrollTop) - projectHeight) / projectHeight * 0.5;
+        }
+    }
 });
 
 const home = document.getElementById('home');
