@@ -1,0 +1,60 @@
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-top: -1vh;
+}
+
+body {
+  background-color: white;
+}
+
+section {
+  margin-left: -1vw;
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+}
+
+.navigation-bar {
+  z-index: 999;
+  display: flex;
+  position: sticky;
+  top: 0;
+  height: 5vh;
+  width: 100vw;
+  margin-left: -1vw;
+  background-color: purple;
+}
+
+.introduction {
+  margin-left: -1vw;
+  height: 100vh;
+  background-color: blue;
+  .introduction-box {
+    margin: auto;
+    width: 50%;
+    height: 50%;
+  }
+}
+
+.story {
+  padding: 5% 5% 5% 5%;
+  background-color: brown;
+}
+
+.projects {
+  padding: 5% 5% 5% 5%;
+  background-color: yellow;
+}
+
+.skills {
+  padding: 5% 5% 5% 5%;
+  background-color: red;
+}
+
+.contact {
+  padding: 5% 5% 5% 5%;
+  background-color: green;
+}
