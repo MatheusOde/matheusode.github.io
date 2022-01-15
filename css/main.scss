@@ -26,6 +26,9 @@ section {
   width: 100vw;
   margin-left: -1vw;
   background-color: purple;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+  .logo {
+  }
 }
 
 .introduction {
@@ -40,21 +43,21 @@ section {
 }
 
 .story {
-  padding: 5% 5% 5% 5%;
+  padding: 3% 2% 2% 2%;
   background-color: brown;
 }
 
 .projects {
-  padding: 5% 5% 5% 5%;
+  padding: 3% 2% 2% 2%;
   background-color: yellow;
 }
 
 .skills {
-  padding: 5% 5% 5% 5%;
+  padding: 3% 2% 2% 2%;
   background-color: red;
 }
 
 .contact {
-  padding: 5% 5% 5% 5%;
+  padding: 3% 2% 2% 2%;
   background-color: green;
 }
