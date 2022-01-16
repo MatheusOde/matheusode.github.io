@@ -1,3 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+:root {
+  --neon-red: rgb(255, 49, 49);
+  --neon-red-effect: 0 0 2px rgba(255, 0, 0, 0.479),
+    0 0 5px rgba(255, 0, 0, 0.473), 0 0 10px rgb(255, 0, 0);
+  --neon-green: rgb(0, 246, 0);
+  --neon-green-effect: 0 0 2px rgba(0, 205, 0, 0.479),
+    0 0 5px rgba(5, 187, 5, 0.473), 0 0 10px rgb(0, 167, 0);
+  --neon-blue: rgb(62, 62, 255);
+  --neon-blue-effect: 0 0 2px rgba(41, 41, 255, 0.788),
+    0 0 5px rgba(48, 48, 248, 0.719), 0 0 10px rgb(48, 48, 252);
+}
+
 html {
   scroll-behavior: smooth;
   scroll-snap-type: y proximity;
@@ -25,20 +38,76 @@ section {
   height: 5vh;
   width: 100vw;
   margin-left: -1vw;
-  background-color: purple;
+  background-color: #0e0013;
   box-shadow: 0 0 20px rgb(0, 0, 0);
+  justify-content: space-between;
   .logo {
+    font-size: 1.25em;
+    padding: 0.6em;
+    padding-left: 2vw;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--neon-red);
+    text-shadow: var(--neon-red-effect);
+    transition: 0.25s;
+  }
+  .logo:hover {
+    transform: scale3d(1.2, 1.4, 1.2);
+    transition: 0.25s;
+  }
+  .menu {
+    padding: 1em;
+    a {
+      color: lightgray;
+      text-decoration: none;
+      transition: 00.25s;
+      padding-left: 1em;
+    }
+    a:hover {
+      transform: scale3d(1.2, 1.4, 1.2);
+      color: var(--neon-red);
+      text-shadow: var(--neon-red-effect);
+      transition: 0.25s;
+    }
+  }
+  .menu-btn {
+    display: none;
   }
 }
 
 .introduction {
   margin-left: -1vw;
-  height: 100vh;
+  height: 80vh;
   background-color: blue;
-  .introduction-box {
-    margin: auto;
+  padding: 10vh 10vw 10vh 10vw;
+  display: flex;
+  align-items: center;
+  .photo {
+    object-fit: cover;
+    border: #0e0013 solid 0.25em;
+    box-shadow: #0e0013 0 0 5em;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 100%;
+    margin-right: 10vw;
+  }
+  .about {
+    height: auto;
     width: 50%;
-    height: 50%;
+    font-family: "Roboto", sans-serif;
+    .about-title {
+      font-size: 4em;
+      font-weight: bold;
+      span {
+        color: var(--neon-red);
+        text-shadow: var(--neon-red-effect);
+      }
+      margin-bottom: 2.5em;
+    }
+    .about-description {
+      font-size: 1.25em;
+      text-align: center;
+    }
   }
 }
 
@@ -60,4 +129,22 @@ section {
 .contact {
   padding: 3% 2% 2% 2%;
   background-color: green;
+}
+@media only screen and (max-width: 600px) {
+  .navigation-bar {
+    margin-left: -2vw;
+    .menu {
+      display: none;
+    }
+    .menu-btn {
+      transform: scale3d(0.7, 0.7, 0.7);
+      display: flex;
+      padding-right: 1em;
+      cursor: pointer;
+    }
+    .menu-btn:hover {
+      transform: scale3d(0.9, 0.9, 0.9);
+      transition: 0.25s;
+    }
+  }
 }
