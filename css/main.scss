@@ -19,15 +19,16 @@ html {
   margin-top: -1vh;
 }
 
-body {
-  background-color: white;
-}
-
 section {
-  margin-left: -1vw;
+  margin-left: -3vw;
   height: 100vh;
   width: 100vw;
   scroll-snap-align: start;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-bar {
@@ -37,7 +38,6 @@ section {
   top: 0;
   height: 5vh;
   width: 100vw;
-  margin-left: -1vw;
   background-color: #0e0013;
   box-shadow: 0 0 20px rgb(0, 0, 0);
   justify-content: space-between;
@@ -114,11 +114,13 @@ section {
 .story {
   padding: 3% 2% 2% 2%;
   background-color: brown;
+  height: 100%;
 }
 
 .projects {
   background-color: #0b0011;
   padding: 2%;
+  height: 100%;
   color: #c3c4d5;
   h1 {
     padding-top: 2vh;
@@ -131,47 +133,101 @@ section {
   }
   ul {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 25% 25% 25% 25%;
     list-style-type: none;
     padding-top: 2vh;
     padding-bottom: 25vh;
     justify-content: center;
     .imagesGrid {
-      margin-left: 1vw;
-      margin-right: 1vw;
       padding-bottom: 2em;
       object-fit: cover;
       p {
         margin-left: 1vw;
         font-size: 1em;
-        max-width: 27vw;
+        max-width: 20vw;
         padding-top: 1em;
       }
       a {
         text-decoration: none;
         font-size: 1em;
-        max-width: 27vw;
+        max-width: 20vw;
       }
       img {
         object-fit: cover;
         border: var(--neon-blue);
         box-shadow: var(--neon-blue-effect);
-        width: 27vw;
-        height: 14vw;
+        width: 20vw;
+        height: 11vw;
+      }
+    }
+  }
+}
+.skills {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: #111;
+  height: 100%;
+  margin-bottom: -8vh;
+  h1 {
+    color: #c3c4d5;
+    padding-top: 2vh;
+    font-size: 3em;
+    font-weight: bold;
+    span {
+      color: var(--neon-green);
+      text-shadow: var(--neon-green-effect);
+    }
+  }
+  ul {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    list-style-type: none;
+    padding-top: 2vh;
+    justify-content: center;
+    .skillsGrid {
+      margin-left: 1vw;
+      margin-right: 1vw;
+      object-fit: scale-down;
+      img {
+        object-fit: scale-down;
+        width: 16vw;
+        height: 9vw;
       }
     }
   }
 }
 
-.skills {
-  padding: 2% 2% 2% 2%;
-  background-color: red;
+.last-section {
+  height: 97vh;
 }
 
 .contact {
-  padding: 2% 2% 2% 2%;
-  background-color: green;
+  margin-left: -3%;
+  width: 100vw;
+  height: 4vh;
+  position: static;
+  display: flex;
+  background-color: #0e0013;
+  .socialmedia {
+    display: flex;
+    img {
+      height: 2.5vh;
+      width: auto;
+      margin-top: 1px;
+      margin-bottom: 1px;
+      margin-left: 20px;
+      margin-right: 10px;
+    }
+    img:hover {
+      cursor: pointer;
+      transform: scale3d(1.1, 1.1, 1.1);
+      transition: 0.1s;
+    }
+  }
 }
+
 @media only screen and (max-width: 600px) {
   .navigation-bar {
     margin-left: -2vw;

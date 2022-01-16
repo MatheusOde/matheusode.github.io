@@ -20,15 +20,16 @@ html {
   margin-top: -1vh;
 }
 
-body {
-  background-color: white;
-}
-
 section {
-  margin-left: -1vw;
+  margin-left: -3vw;
   height: 100vh;
   width: 100vw;
   scroll-snap-align: start;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-bar {
@@ -41,7 +42,6 @@ section {
   top: 0;
   height: 5vh;
   width: 100vw;
-  margin-left: -1vw;
   background-color: #0e0013;
   -webkit-box-shadow: 0 0 20px black;
           box-shadow: 0 0 20px black;
@@ -144,11 +144,13 @@ section {
 .story {
   padding: 3% 2% 2% 2%;
   background-color: brown;
+  height: 100%;
 }
 
 .projects {
   background-color: #0b0011;
   padding: 2%;
+  height: 100%;
   color: #c3c4d5;
 }
 
@@ -166,8 +168,8 @@ section {
 .projects ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 33% 33% 33%;
-      grid-template-columns: 33% 33% 33%;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
   list-style-type: none;
   padding-top: 2vh;
   padding-bottom: 25vh;
@@ -177,8 +179,6 @@ section {
 }
 
 .projects ul .imagesGrid {
-  margin-left: 1vw;
-  margin-right: 1vw;
   padding-bottom: 2em;
   -o-object-fit: cover;
      object-fit: cover;
@@ -187,14 +187,14 @@ section {
 .projects ul .imagesGrid p {
   margin-left: 1vw;
   font-size: 1em;
-  max-width: 27vw;
+  max-width: 20vw;
   padding-top: 1em;
 }
 
 .projects ul .imagesGrid a {
   text-decoration: none;
   font-size: 1em;
-  max-width: 27vw;
+  max-width: 20vw;
 }
 
 .projects ul .imagesGrid img {
@@ -203,18 +203,94 @@ section {
   border: var(--neon-blue);
   -webkit-box-shadow: var(--neon-blue-effect);
           box-shadow: var(--neon-blue-effect);
-  width: 27vw;
-  height: 14vw;
+  width: 20vw;
+  height: 11vw;
 }
 
 .skills {
-  padding: 2% 2% 2% 2%;
-  background-color: red;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: #111;
+  height: 100%;
+  margin-bottom: -8vh;
+}
+
+.skills h1 {
+  color: #c3c4d5;
+  padding-top: 2vh;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.skills h1 span {
+  color: var(--neon-green);
+  text-shadow: var(--neon-green-effect);
+}
+
+.skills ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 20% 20% 20% 20%;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+  list-style-type: none;
+  padding-top: 2vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills ul .skillsGrid {
+  margin-left: 1vw;
+  margin-right: 1vw;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+.skills ul .skillsGrid img {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  width: 16vw;
+  height: 9vw;
+}
+
+.last-section {
+  height: 97vh;
 }
 
 .contact {
-  padding: 2% 2% 2% 2%;
-  background-color: green;
+  margin-left: -3%;
+  width: 100vw;
+  height: 4vh;
+  position: static;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #0e0013;
+}
+
+.contact .socialmedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact .socialmedia img {
+  height: 2.5vh;
+  width: auto;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.contact .socialmedia img:hover {
+  cursor: pointer;
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+          transform: scale3d(1.1, 1.1, 1.1);
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 @media only screen and (max-width: 600px) {
