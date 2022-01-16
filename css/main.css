@@ -17,19 +17,16 @@ html {
       scroll-snap-type: y proximity;
   overflow-y: scroll;
   overflow-x: hidden;
-  margin-top: -1vh;
+  background-color: #0b0011;
+}
+
+body {
+  width: 100vw;
 }
 
 section {
-  margin-left: -3vw;
   height: 100vh;
-  width: 100vw;
   scroll-snap-align: start;
-}
-
-.container {
-  margin: 0;
-  padding: 0;
 }
 
 .navigation-bar {
@@ -41,7 +38,8 @@ section {
   position: sticky;
   top: 0;
   height: 5vh;
-  width: 100vw;
+  padding-left: 40px;
+  padding-right: 30px;
   background-color: #0e0013;
   -webkit-box-shadow: 0 0 20px black;
           box-shadow: 0 0 20px black;
@@ -95,7 +93,6 @@ section {
 }
 
 .introduction {
-  margin-left: -1vw;
   height: 80vh;
   background-color: blue;
   padding: 10vh 10vw 10vh 10vw;
@@ -260,7 +257,7 @@ section {
 }
 
 .contact {
-  margin-left: -3%;
+  margin-left: -1vw;
   width: 100vw;
   height: 4vh;
   position: static;
@@ -293,7 +290,7 @@ section {
   transition: 0.1s;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 760px) {
   .navigation-bar {
     margin-left: -2vw;
   }
