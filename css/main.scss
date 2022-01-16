@@ -117,17 +117,59 @@ section {
 }
 
 .projects {
-  padding: 3% 2% 2% 2%;
-  background-color: yellow;
+  background-color: #0b0011;
+  padding: 2%;
+  color: #c3c4d5;
+  h1 {
+    padding-top: 2vh;
+    font-size: 3em;
+    font-weight: bold;
+    span {
+      color: var(--neon-blue);
+      text-shadow: var(--neon-blue-effect);
+    }
+  }
+  ul {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    list-style-type: none;
+    padding-top: 2vh;
+    padding-bottom: 25vh;
+    justify-content: center;
+    .imagesGrid {
+      margin-left: 1vw;
+      margin-right: 1vw;
+      padding-bottom: 2em;
+      object-fit: cover;
+      p {
+        margin-left: 1vw;
+        font-size: 1em;
+        max-width: 27vw;
+        padding-top: 1em;
+      }
+      a {
+        text-decoration: none;
+        font-size: 1em;
+        max-width: 27vw;
+      }
+      img {
+        object-fit: cover;
+        border: var(--neon-blue);
+        box-shadow: var(--neon-blue-effect);
+        width: 27vw;
+        height: 14vw;
+      }
+    }
+  }
 }
 
 .skills {
-  padding: 3% 2% 2% 2%;
+  padding: 2% 2% 2% 2%;
   background-color: red;
 }
 
 .contact {
-  padding: 3% 2% 2% 2%;
+  padding: 2% 2% 2% 2%;
   background-color: green;
 }
 @media only screen and (max-width: 600px) {

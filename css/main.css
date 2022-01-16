@@ -147,17 +147,73 @@ section {
 }
 
 .projects {
-  padding: 3% 2% 2% 2%;
-  background-color: yellow;
+  background-color: #0b0011;
+  padding: 2%;
+  color: #c3c4d5;
+}
+
+.projects h1 {
+  padding-top: 2vh;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.projects h1 span {
+  color: var(--neon-blue);
+  text-shadow: var(--neon-blue-effect);
+}
+
+.projects ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
+  list-style-type: none;
+  padding-top: 2vh;
+  padding-bottom: 25vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects ul .imagesGrid {
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding-bottom: 2em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.projects ul .imagesGrid p {
+  margin-left: 1vw;
+  font-size: 1em;
+  max-width: 27vw;
+  padding-top: 1em;
+}
+
+.projects ul .imagesGrid a {
+  text-decoration: none;
+  font-size: 1em;
+  max-width: 27vw;
+}
+
+.projects ul .imagesGrid img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: var(--neon-blue);
+  -webkit-box-shadow: var(--neon-blue-effect);
+          box-shadow: var(--neon-blue-effect);
+  width: 27vw;
+  height: 14vw;
 }
 
 .skills {
-  padding: 3% 2% 2% 2%;
+  padding: 2% 2% 2% 2%;
   background-color: red;
 }
 
 .contact {
-  padding: 3% 2% 2% 2%;
+  padding: 2% 2% 2% 2%;
   background-color: green;
 }
 
