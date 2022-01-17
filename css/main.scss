@@ -193,16 +193,16 @@ section {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     list-style-type: none;
-    padding-top: 2vh;
     justify-content: center;
     .skillsGrid {
       margin-left: 1vw;
       margin-right: 1vw;
       object-fit: scale-down;
+      padding-bottom: 10vh;
       img {
         object-fit: scale-down;
-        width: 16vw;
-        height: 9vw;
+        width: 10vw;
+        height: 6vw;
       }
     }
   }

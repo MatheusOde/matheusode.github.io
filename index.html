@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <section>
+    <section id="introduction">
         <div class="introduction">
             <img src="/assets/other-stuff/photo.jpeg" alt="photo" class="photo">
             <div class="about">
@@ -24,10 +24,10 @@
             <a> MatheusOde </a>
         </div>
         <div class="menu">
-            <a href="#">Home</a>
-            <a href="#">Projects</a>
-            <a href="#">Skills</a>
-            <a href="#">Contact</a>
+            <a href="#introduction" id="home-btn">Home</a>
+            <a href="#projects" id="projects-btn">Projects</a>
+            <a href="#skills" id="skills-btn">Skills</a>
+            <a href="#" id="contact-btn">Contact</a>
         </div>
         <img src="/assets/site-UI/menu.svg" class="menu-btn">
     </div>
@@ -59,10 +59,9 @@
             <div class="right-column">
 
             </div>
-            
         </div>
     </section>
-    <section class="projects-section">
+    <section class="projects-section" id="projects">
         <div class="projects">
             <h1>Projects I've worked <span>on</span></h1>
             <ul>
@@ -98,7 +97,7 @@
             </ul>
         </div>
     </section>
-    <section class="last-section">
+    <section class="last-section" id="skills">
         <div class="skills">
             <h1>I already <span>use:</span></h1>
             <ul>
@@ -134,9 +133,15 @@
     </section>
     <div class="contact">
         <div class="socialmedia">
-            <img src="assets/skills/github.png" alt="" href="">
-            <img src="assets/socials/linkedin.png" alt="" href="">
-            <img src="assets/socials/instagram.png" alt="" href="">
+            <a  href="https://www.github.com/MatheusOde" target="_blank">
+                <img src="assets/skills/github.png" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/matheus-odebrecht-b0b0901b3/" target="_blank">
+            <img src="assets/socials/linkedin.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/_matheusode/" target="_blank">
+            <img src="assets/socials/instagram.png" alt="">
+            </a>
         </div>
         <div class="smileyface"></div>
     </div>

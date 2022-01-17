@@ -252,7 +252,6 @@ section {
   -ms-grid-columns: 20% 20% 20% 20% 20%;
       grid-template-columns: 20% 20% 20% 20% 20%;
   list-style-type: none;
-  padding-top: 2vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -263,13 +262,14 @@ section {
   margin-right: 1vw;
   -o-object-fit: scale-down;
      object-fit: scale-down;
+  padding-bottom: 10vh;
 }
 
 .skills ul .skillsGrid img {
   -o-object-fit: scale-down;
      object-fit: scale-down;
-  width: 16vw;
-  height: 9vw;
+  width: 10vw;
+  height: 6vw;
 }
 
 .last-section {
