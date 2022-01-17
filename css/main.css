@@ -17,7 +17,7 @@ html {
       scroll-snap-type: y proximity;
   overflow-y: scroll;
   overflow-x: hidden;
-  background-color: #0b0011;
+  background-color: #000;
 }
 
 body {
@@ -40,7 +40,7 @@ section {
   height: 5vh;
   padding-left: 40px;
   padding-right: 30px;
-  background-color: #0e0013;
+  background-color: #000;
   -webkit-box-shadow: 0 0 20px black;
           box-shadow: 0 0 20px black;
   -webkit-box-pack: justify;
@@ -94,7 +94,7 @@ section {
 
 .introduction {
   height: 80vh;
-  background-color: blue;
+  background-color: #5626c4;
   padding: 10vh 10vw 10vh 10vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,12 +140,32 @@ section {
 
 .story {
   padding: 3% 2% 2% 2%;
-  background-color: brown;
+  background-color: #646c79;
+  color: #181818;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.story .left-column {
+  width: 50%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 25% 25% 25% 25%;
+      grid-template-rows: 25% 25% 25% 25%;
+  height: 90%;
+}
+
+.story .right-column {
+  width: 50%;
 }
 
 .projects {
-  background-color: #0b0011;
+  background-color: #1f3044;
   padding: 2%;
   height: 100%;
   color: #c3c4d5;
@@ -209,7 +229,7 @@ section {
   padding-bottom: 2%;
   padding-left: 2%;
   padding-right: 2%;
-  background-color: #111;
+  background-color: #111924;
   height: 100%;
   margin-bottom: -8vh;
 }
@@ -264,7 +284,7 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #0e0013;
+  background-color: #000;
 }
 
 .contact .socialmedia {
