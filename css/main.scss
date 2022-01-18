@@ -1,11 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 :root {
-  --neon-red: rgb(255, 49, 49);
-  --neon-red-effect: 0 0 2px rgba(255, 0, 0, 0.479),
-    0 0 5px rgba(255, 0, 0, 0.473), 0 0 10px rgb(255, 0, 0);
-  --neon-green: rgb(0, 246, 0);
-  --neon-green-effect: 0 0 2px rgba(0, 205, 0, 0.479),
-    0 0 5px rgba(5, 187, 5, 0.473), 0 0 10px rgb(0, 167, 0);
+  --neon-purple: rgb(112, 0, 187);
+  --neon-purple-effect: 0 0 2px rgba(112, 0, 187, 0.452),
+    0 0 5px rgba(112, 0, 187, 0.493), 0 0 10px rgb(112, 0, 187);
   --neon-blue: rgb(62, 62, 255);
   --neon-blue-effect: 0 0 2px rgba(41, 41, 255, 0.788),
     0 0 5px rgba(48, 48, 248, 0.719), 0 0 10px rgb(48, 48, 252);
@@ -116,20 +113,22 @@ section {
 }
 
 .story {
-  background-color: #646c79;
-  color: #181818;
+  background-color: #575d68;
+  color: #dddddd;
   height: 100vh;
   display: flex;
   align-items: center;
+  padding-left: 3vw;
+  padding-right: 3vw;
   .left-column {
-    width: 50%;
+    width: 25%;
     display: grid;
     grid-template-rows: 25% 25% 25% 25%;
     height: 90%;
     align-items: center;
   }
   .right-column {
-    width: 50%;
+    width: 75%;
   }
 }
 
@@ -137,9 +136,11 @@ section {
   background-color: #1f3044;
   height: 100vh;
   color: #c3c4d5;
+  padding-left: 3vw;
   h1 {
     margin: 0;
     padding-top: 7vh;
+    padding-bottom: 4vh;
     font-size: 3em;
     font-weight: bold;
     span {
@@ -186,14 +187,15 @@ section {
     height: 92vh;
     h1 {
       margin: 0;
-      padding-left: 2vw;
+      padding-left: 3vw;
       padding-top: 7vh;
-      color: #c3c4d5;
+      padding-bottom: 4vh;
+      color: #dddddd;
       font-size: 3em;
       font-weight: bold;
       span {
-        color: var(--neon-green);
-        text-shadow: var(--neon-green-effect);
+        color: var(--neon-purple);
+        text-shadow: var(--neon-purple-effect);
       }
     }
     ul {
@@ -224,11 +226,14 @@ section {
     background-color: #000;
     .socialmedia {
       display: flex;
+      padding-left: 2vw;
       img {
         height: 2.25vh;
         width: auto;
         padding-top: 0.25vh;
-        padding-left: 2vw;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        border-radius: 50%;
       }
       img:hover {
         cursor: pointer;
