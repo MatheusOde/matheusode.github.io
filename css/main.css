@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  width: 100vw;
+  width: 99vw;
 }
 
 section {
@@ -54,8 +54,8 @@ section {
   padding-left: 2vw;
   cursor: pointer;
   text-decoration: none;
-  color: var(--neon-red);
-  text-shadow: var(--neon-red-effect);
+  color: #5626c4;
+  text-shadow: var(--neon-blue-effect);
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
@@ -82,8 +82,7 @@ section {
 .navigation-bar .menu a:hover {
   -webkit-transform: scale3d(1.2, 1.4, 1.2);
           transform: scale3d(1.2, 1.4, 1.2);
-  color: var(--neon-red);
-  text-shadow: var(--neon-red-effect);
+  text-shadow: var(--neon-blue-effect);
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
@@ -102,12 +101,13 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: white;
 }
 
 .introduction .photo {
   -o-object-fit: cover;
      object-fit: cover;
-  border: #0e0013 solid 0.25em;
+  border: #ffffff solid 0.25em;
   -webkit-box-shadow: #0e0013 0 0 5em;
           box-shadow: #0e0013 0 0 5em;
   width: 30vw;
@@ -273,14 +273,16 @@ section {
 }
 
 .last-section {
-  height: 97vh;
+  height: 91vh;
+  padding-bottom: 6vh;
 }
 
 .contact {
+  display: fixed;
+  bottom: 0;
   margin-left: -1vw;
   width: 100vw;
-  height: 4vh;
-  position: static;
+  height: 3vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,12 +296,10 @@ section {
 }
 
 .contact .socialmedia img {
-  height: 2.5vh;
+  height: 2.25vh;
   width: auto;
-  margin-top: 1px;
-  margin-bottom: 1px;
-  margin-left: 20px;
-  margin-right: 10px;
+  padding-top: 0.25vh;
+  padding-left: 2vw;
 }
 
 .contact .socialmedia img:hover {

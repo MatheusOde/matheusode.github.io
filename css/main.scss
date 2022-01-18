@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  width: 100vw;
+  width: 99vw;
 }
 
 section {
@@ -45,8 +45,8 @@ section {
     padding-left: 2vw;
     cursor: pointer;
     text-decoration: none;
-    color: var(--neon-red);
-    text-shadow: var(--neon-red-effect);
+    color: #5626c4;
+    text-shadow: var(--neon-blue-effect);
     transition: 0.25s;
   }
   .logo:hover {
@@ -63,8 +63,7 @@ section {
     }
     a:hover {
       transform: scale3d(1.2, 1.4, 1.2);
-      color: var(--neon-red);
-      text-shadow: var(--neon-red-effect);
+      text-shadow: var(--neon-blue-effect);
       transition: 0.25s;
     }
   }
@@ -79,9 +78,10 @@ section {
   padding: 10vh 10vw 10vh 10vw;
   display: flex;
   align-items: center;
+  color: white;
   .photo {
     object-fit: cover;
-    border: #0e0013 solid 0.25em;
+    border: #ffffff solid 0.25em;
     box-shadow: #0e0013 0 0 5em;
     width: 30vw;
     height: 30vw;
@@ -209,25 +209,25 @@ section {
 }
 
 .last-section {
-  height: 97vh;
+  height: 91vh;
+  padding-bottom: 6vh;
 }
 
 .contact {
+  display: fixed;
+  bottom: 0;
   margin-left: -1vw;
   width: 100vw;
-  height: 4vh;
-  position: static;
+  height: 3vh;
   display: flex;
   background-color: #000;
   .socialmedia {
     display: flex;
     img {
-      height: 2.5vh;
+      height: 2.25vh;
       width: auto;
-      margin-top: 1px;
-      margin-bottom: 1px;
-      margin-left: 20px;
-      margin-right: 10px;
+      padding-top: 0.25vh;
+      padding-left: 2vw;
     }
     img:hover {
       cursor: pointer;
