@@ -25,7 +25,9 @@ section {
 
 .intro-section {
   scroll-snap-type: none;
+  scroll-snap-align: none;
 }
+
 .navigation-bar {
   z-index: 999;
   display: flex;

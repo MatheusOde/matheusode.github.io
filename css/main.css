@@ -27,6 +27,7 @@ section {
 .intro-section {
   -ms-scroll-snap-type: none;
       scroll-snap-type: none;
+  scroll-snap-align: none;
 }
 
 .navigation-bar {
