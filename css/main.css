@@ -24,6 +24,11 @@ section {
   scroll-snap-align: start;
 }
 
+.intro-section {
+  -ms-scroll-snap-type: none;
+      scroll-snap-type: none;
+}
+
 .navigation-bar {
   z-index: 999;
   display: -webkit-box;
