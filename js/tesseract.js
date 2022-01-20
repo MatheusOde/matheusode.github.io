@@ -175,9 +175,18 @@ var context = cnv.getContext("2d");
 
 var cube = new Cube(0, 0, 400, 200);
 var mouse = {};
+
+
+var start = new Date();
 cnv.addEventListener("mousemove", function (e) {
-        mouse.x = e.clientX;
-        mouse.y = e.clientY;
-        window.requestAnimationFrame(loop);
-        loop(mouse);
+
+    var elapsed = new Date() - start;
+    if (elapsed < 1000/30) {
+        return;
+    }
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
+    loop(mouse);
+    window.requestAnimationFrame(loop);
+    start = new Date();
 });

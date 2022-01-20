@@ -156,7 +156,14 @@ section {
   margin: 0;
 }
 
+.introduction .intro-elements .about .about-title span {
+  color: var(--neon-blue);
+  text-shadow: var(--neon-blue-effect);
+}
+
 .introduction .intro-elements .about .about-description {
+  color: #c3c4d5;
+  text-shadow: 3px 3px 3px #000000, 3px 3px 3px #000000, 3px 3px 5px #000000, 3px 3px 10px #000000;
   font-size: 1.25em;
   text-align: center;
   margin: 0;
