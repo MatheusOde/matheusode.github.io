@@ -91,7 +91,6 @@ section {
 }
 
 .introduction {
-  background-color: #5626c4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,7 +103,15 @@ section {
   padding: 0;
 }
 
+.introduction canvas {
+  height: 99vh;
+  width: 99vw;
+  position: absolute;
+  z-index: 1;
+}
+
 .introduction .intro-elements {
+  position: absolute;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -118,6 +125,7 @@ section {
 }
 
 .introduction .intro-elements .photo {
+  z-index: 998;
   -o-object-fit: cover;
      object-fit: cover;
   border: #ffffff solid 0.25em;
@@ -130,6 +138,7 @@ section {
 }
 
 .introduction .intro-elements .about {
+  z-index: 998;
   height: auto;
   width: 50%;
   font-family: "Roboto", sans-serif;
@@ -145,11 +154,6 @@ section {
   font-size: 4em;
   font-weight: bold;
   margin: 0;
-}
-
-.introduction .intro-elements .about .about-title span {
-  color: var(--neon-red);
-  text-shadow: var(--neon-red-effect);
 }
 
 .introduction .intro-elements .about .about-description {

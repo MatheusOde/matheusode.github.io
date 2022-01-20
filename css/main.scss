@@ -72,19 +72,27 @@ section {
 }
 
 .introduction {
-  background-color: #5626c4;
   display: flex;
   align-items: center;
   color: white;
   height: 100vh;
   margin: 0;
   padding: 0;
+  canvas {
+    height: 99vh;
+    width: 99vw;
+
+    position: absolute;
+    z-index: 1;
+  }
   .intro-elements {
+    position: absolute;
     align-items: center;
     display: flex;
     padding: 10%;
     justify-content: space-between;
     .photo {
+      z-index: 998;
       object-fit: cover;
       border: #ffffff solid 0.25em;
       box-shadow: #0e0013 0 0 5em;
@@ -94,6 +102,7 @@ section {
       margin: 0;
     }
     .about {
+      z-index: 998;
       height: auto;
       width: 50%;
       font-family: "Roboto", sans-serif;
@@ -104,8 +113,6 @@ section {
         font-weight: bold;
         margin: 0;
         span {
-          color: var(--neon-red);
-          text-shadow: var(--neon-red-effect);
         }
       }
       .about-description {
