@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 :root {
   --neon-purple: rgb(112, 0, 187);
   --neon-purple-effect: 0 0 2px rgba(112, 0, 187, 0.452),
@@ -40,6 +41,7 @@ section {
   box-shadow: 0 0 20px rgb(0, 0, 0);
   justify-content: space-between;
   align-items: center;
+
   .logo {
     font-size: 1.25em;
     padding-left: 2vw;
@@ -49,10 +51,12 @@ section {
     text-shadow: var(--neon-blue-effect);
     transition: 0.25s;
   }
+
   .logo:hover {
     transform: scale3d(1.2, 1.4, 1.2);
     transition: 0.25s;
   }
+
   .menu {
     a {
       color: lightgray;
@@ -60,12 +64,14 @@ section {
       transition: 00.25s;
       padding-left: 1em;
     }
+
     a:hover {
       transform: scale3d(1.2, 1.4, 1.2);
       text-shadow: var(--neon-blue-effect);
       transition: 0.25s;
     }
   }
+
   .menu-btn {
     display: none;
   }
@@ -78,6 +84,7 @@ section {
   height: 100vh;
   margin: 0;
   padding: 0;
+
   canvas {
     height: 99vh;
     width: 99vw;
@@ -85,12 +92,14 @@ section {
     position: absolute;
     z-index: 1;
   }
+
   .intro-elements {
     position: absolute;
     align-items: center;
     display: flex;
     padding: 10%;
     justify-content: space-between;
+
     .photo {
       z-index: 998;
       object-fit: cover;
@@ -101,6 +110,7 @@ section {
       border-radius: 50%;
       margin: 0;
     }
+
     .about {
       z-index: 998;
       height: auto;
@@ -108,15 +118,18 @@ section {
       font-family: "Roboto", sans-serif;
       align-items: center;
       justify-content: space-between;
+
       .about-title {
         font-size: 4em;
         font-weight: bold;
         margin: 0;
+
         span {
           color: var(--neon-blue);
           text-shadow: var(--neon-blue-effect);
         }
       }
+
       .about-description {
         color: #c3c4d5;
         text-shadow: 3px 3px 3px #000000, 3px 3px 3px #000000,
@@ -137,6 +150,7 @@ section {
   align-items: center;
   padding-left: 3vw;
   padding-right: 3vw;
+
   .left-column {
     width: 25%;
     display: grid;
@@ -144,6 +158,7 @@ section {
     height: 90%;
     align-items: center;
   }
+
   .right-column {
     width: 75%;
   }
@@ -154,17 +169,20 @@ section {
   height: 100vh;
   color: #c3c4d5;
   padding-left: 3vw;
+
   h1 {
     margin: 0;
     padding-top: 7vh;
     padding-bottom: 4vh;
     font-size: 3em;
     font-weight: bold;
+
     span {
       color: var(--neon-blue);
       text-shadow: var(--neon-blue-effect);
     }
   }
+
   ul {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -172,20 +190,24 @@ section {
     padding-top: 2vh;
     padding-bottom: 25vh;
     justify-content: center;
+
     .imagesGrid {
       padding-bottom: 2em;
       object-fit: cover;
+
       p {
         margin-left: 1vw;
         font-size: 1em;
         max-width: 20vw;
         padding-top: 1em;
       }
+
       a {
         text-decoration: none;
         font-size: 1em;
         max-width: 20vw;
       }
+
       img {
         object-fit: cover;
         border: var(--neon-blue);
@@ -199,9 +221,11 @@ section {
 
 .last-section {
   justify-content: space-between;
+
   .skills {
     background-color: #111924;
     height: 92vh;
+
     h1 {
       margin: 0;
       padding-left: 3vw;
@@ -210,21 +234,25 @@ section {
       color: #dddddd;
       font-size: 3em;
       font-weight: bold;
+
       span {
         color: var(--neon-purple);
         text-shadow: var(--neon-purple-effect);
       }
     }
+
     ul {
       display: grid;
       grid-template-columns: 20% 20% 20% 20% 20%;
       list-style-type: none;
       justify-content: center;
+
       .skillsGrid {
         margin-left: 1vw;
         margin-right: 1vw;
         object-fit: scale-down;
         padding-bottom: 10vh;
+
         img {
           object-fit: scale-down;
           width: 10vw;
@@ -241,9 +269,11 @@ section {
     height: 3vh;
     display: flex;
     background-color: #000;
+
     .socialmedia {
       display: flex;
       padding-left: 2vw;
+
       img {
         height: 2.25vh;
         width: auto;
@@ -252,6 +282,7 @@ section {
         padding-right: 1vw;
         border-radius: 50%;
       }
+
       img:hover {
         cursor: pointer;
         transform: scale3d(1.1, 1.1, 1.1);
@@ -261,21 +292,59 @@ section {
   }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 650px) {
   .navigation-bar {
     margin-left: -2vw;
+
     .menu {
       display: none;
     }
+
     .menu-btn {
       transform: scale3d(0.7, 0.7, 0.7);
       display: flex;
       padding-right: 1em;
       cursor: pointer;
     }
+
     .menu-btn:hover {
       transform: scale3d(0.9, 0.9, 0.9);
       transition: 0.25s;
     }
   }
+
+  // Correcting photo and text position
+  .introduction {
+    display: flex;
+
+    .intro-elements {
+      display: grid;
+      padding: 0%;
+      height: 80%;
+      width: 100%;
+      grid-column: 1;
+      grid-row-gap: 10vh;
+
+      .photo {
+        margin-left: 25%;
+        margin-right: 25%;
+        grid-row: 2;
+        width: 50vw;
+        height: 50vw;
+      }
+
+      .about {
+        grid-row: 1;
+        margin-left: 25%;
+        margin-right: 25%;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        grid-row-gap: 5vh;
+      }
+    }
+
+  }
+
 }
