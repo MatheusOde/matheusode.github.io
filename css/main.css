@@ -265,11 +265,12 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 97vh;
 }
 
 .last-section .skills {
   background-color: #111924;
-  height: 92vh;
+  height: 97vh;
 }
 
 .last-section .skills h1 {
@@ -313,34 +314,41 @@ section {
   height: 6vw;
 }
 
-.last-section .contact {
-  display: absolute;
-  bottom: 0;
-  margin-left: -1vw;
-  height: 3vh;
+.contact-section {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: #000;
+  overflow: hidden;
 }
 
-.last-section .contact .socialmedia {
+.contact-section .contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33%;
+      grid-template-columns: 33%;
+}
+
+.contact-section .contact .socialmedia {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 2vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
 }
 
-.last-section .contact .socialmedia img {
+.contact-section .contact .socialmedia img {
+  padding-left: 3vw;
+  padding-right: 3vw;
   height: 2.25vh;
   width: auto;
-  padding-top: 0.25vh;
-  padding-left: 1vw;
-  padding-right: 1vw;
   border-radius: 50%;
 }
 
-.last-section .contact .socialmedia img:hover {
+.contact-section .contact .socialmedia img:hover {
   cursor: pointer;
   -webkit-transform: scale3d(1.1, 1.1, 1.1);
           transform: scale3d(1.1, 1.1, 1.1);
@@ -473,6 +481,40 @@ section {
   .projects-section .projects ul .imagesGrid img {
     width: 80vw;
     height: 45vw;
+  }
+  .last-section {
+    height: 94vh;
+  }
+  .last-section .skills {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .last-section .skills ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 33% 33% 33%;
+        grid-template-columns: 33% 33% 33%;
+    -ms-grid-rows: 25% 25% 25%;
+        grid-template-rows: 25% 25% 25%;
+  }
+  .last-section .skills ul .skillsGrid {
+    padding: 2vh;
+  }
+  .last-section .skills ul .skillsGrid img {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    width: 20vw;
+    height: 20vw;
   }
 }
 /*# sourceMappingURL=main.css.map */
