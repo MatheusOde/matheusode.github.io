@@ -18,10 +18,12 @@ html {
   scroll-behavior: smooth;
   scroll-snap-type: y proximity;
   background-color: #000;
+  overflow-x: hidden;
 }
 
 section {
-  scroll-snap-align: start;
+  scroll-snap-align: smooth;
+  max-width: 100%;
 }
 
 .intro-section {
@@ -41,6 +43,7 @@ section {
   box-shadow: 0 0 20px rgb(0, 0, 0);
   justify-content: space-between;
   align-items: center;
+  max-width: 90%;
 
   .logo {
     font-size: 1.25em;
@@ -73,6 +76,10 @@ section {
   }
 
   .menu-btn {
+    display: none;
+  }
+
+  .dropdown {
     display: none;
   }
 }
@@ -307,13 +314,12 @@ section {
     .menu-btn {
       transform: scale3d(0.7, 0.7, 0.7);
       display: flex;
-      padding-right: 1em;
       cursor: pointer;
     }
 
     .menu-btn:hover {
       transform: scale3d(0.9, 0.9, 0.9);
-      transition: 0.25s;
+      transition: 0.15s;
     }
   }
 
@@ -356,7 +362,7 @@ section {
 
     .left-column {
       display: grid;
-      width: 100%;
+      width: max-content;
       height: 100%;
       padding-top: 10%;
       justify-content: center;
@@ -371,7 +377,8 @@ section {
   }
 
   .projects-section {
-    height: max-content;
+    height: 100%;
+    width: 100%;
 
     .projects {
       height: max-content;
