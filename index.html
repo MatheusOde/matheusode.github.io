@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="/js/main.js">
+</script>
 
 <head>
     <meta charset="UTF-8">
@@ -41,13 +43,15 @@
             <a href="#skills" id="skills-btn">Skills</a>
             <a href="#" id="contact-btn">Contact</a>
         </div>
-        <img src="/assets/site-UI/menu.svg" class="menu-btn">
-        <div class="dropdown">
-            <a href="#introduction" id="home-btn">Home</a>
-            <a href="#projects" id="projects-btn">Projects</a>
-            <a href="#skills" id="skills-btn">Skills</a>
-            <a href="#" id="contact-btn">Contact</a>
-        </div>
+        <button onclick="switchMenu()" class="dropdown-btn">
+            <img src="/assets/site-UI/menu.svg" class="menu-btn">
+            <div class="dropdown" id="dropdown">
+                <a href="#introduction" id="home-btn">Home</a>
+                <a href="#projects" id="projects-btn">Projects</a>
+                <a href="#skills" id="skills-btn">Skills</a>
+                <a href="#" id="contact-btn">Contact</a>
+            </div>
+        </button>
     </div>
     <section>
         <div class="story">
@@ -178,8 +182,5 @@
     </section>
 
 </body>
-<script src="/js/main.js">
-</script>
-<script src="js/tesseract.js"></script>
 
 </html>
