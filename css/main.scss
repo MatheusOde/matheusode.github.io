@@ -21,6 +21,11 @@ html {
   overflow-x: hidden;
 }
 
+body {
+  scroll-behavior: auto;
+  scroll-snap-type: proximity;
+}
+
 section {
   scroll-snap-align: smooth;
   max-width: 100%;
@@ -43,7 +48,7 @@ section {
   box-shadow: 0 0 20px rgb(0, 0, 0);
   justify-content: space-between;
   align-items: center;
-  max-width: 90%;
+  max-width: 100%;
 
   .logo {
     font-size: 1.25em;
@@ -329,6 +334,9 @@ section {
         background-color: #0e0013;
         min-height: 200px;
         min-width: 100px;
+        right: 5px;
+        justify-content: center;
+        align-items: center;
       }
 
 

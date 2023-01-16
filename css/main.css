@@ -21,6 +21,12 @@ html {
   overflow-x: hidden;
 }
 
+body {
+  scroll-behavior: auto;
+  -ms-scroll-snap-type: proximity;
+      scroll-snap-type: proximity;
+}
+
 section {
   scroll-snap-align: smooth;
   max-width: 100%;
@@ -52,7 +58,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 90%;
+  max-width: 100%;
 }
 
 .navigation-bar .logo {
@@ -391,6 +397,13 @@ section {
     background-color: #0e0013;
     min-height: 200px;
     min-width: 100px;
+    right: 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .navigation-bar .dropdown-btn .dropdown.show {
     display: -ms-grid;
