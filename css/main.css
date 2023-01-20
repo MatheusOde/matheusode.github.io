@@ -15,27 +15,16 @@
 
 html {
   scroll-behavior: smooth;
-  -ms-scroll-snap-type: y proximity;
-      scroll-snap-type: y proximity;
+  -ms-scroll-snap-type: y;
+      scroll-snap-type: y;
   background-color: #000;
   overflow-x: hidden;
 }
 
-body {
-  scroll-behavior: auto;
-  -ms-scroll-snap-type: proximity;
-      scroll-snap-type: proximity;
-}
-
 section {
-  scroll-snap-align: smooth;
+  scroll-margin-top: 15px;
+  scroll-snap-align: start;
   max-width: 100%;
-}
-
-.intro-section {
-  -ms-scroll-snap-type: none;
-      scroll-snap-type: none;
-  scroll-snap-align: none;
 }
 
 .navigation-bar {
@@ -394,16 +383,27 @@ section {
   .navigation-bar .dropdown-btn .dropdown {
     display: none;
     position: absolute;
-    background-color: #0e0013;
-    min-height: 200px;
-    min-width: 100px;
-    right: 5px;
+    background-color: #000;
+    min-height: 400px;
+    min-width: 200px;
+    right: 1px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: larger;
+  }
+  .navigation-bar .dropdown-btn .dropdown a {
+    padding: 30px;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    color: var(--neon-blue);
+    text-shadow: var(--neon-purple-effect);
+    font-weight: bold;
   }
   .navigation-bar .dropdown-btn .dropdown.show {
     display: -ms-grid;

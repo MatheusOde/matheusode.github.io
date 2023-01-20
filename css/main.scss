@@ -16,24 +16,15 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y proximity;
+  scroll-snap-type: y;
   background-color: #000;
   overflow-x: hidden;
 }
 
-body {
-  scroll-behavior: auto;
-  scroll-snap-type: proximity;
-}
-
 section {
-  scroll-snap-align: smooth;
+  scroll-margin-top: 15px;
+  scroll-snap-align: start;
   max-width: 100%;
-}
-
-.intro-section {
-  scroll-snap-type: none;
-  scroll-snap-align: none;
 }
 
 .navigation-bar {
@@ -331,12 +322,23 @@ section {
       .dropdown {
         display: none;
         position: absolute;
-        background-color: #0e0013;
-        min-height: 200px;
-        min-width: 100px;
-        right: 5px;
+        background-color: #000;
+        min-height: 400px;
+        min-width: 200px;
+        right: 1px;
         justify-content: center;
         align-items: center;
+        border-radius: 10px;
+        margin-top: 10px;
+        font-size: larger;
+
+        a {
+          padding: 30px;
+          text-decoration-line: none;
+          color: var(--neon-blue);
+          text-shadow: var(--neon-purple-effect);
+          font-weight: bold;
+        }
       }
 
 
