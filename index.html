@@ -2,19 +2,191 @@
 <html lang="en">
 
 <head>
+    <!-- Page title -->
     <title>Hallo, welt!</title>
+    <!-- Page image link -->
+    <!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
+
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/pageStyle.css">
     <!-- <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="#"> -->
 </head>
 
 <body>
-    <!---->
+
+    <!-- Initial part -->
+    <section class="initial">
+        <!-- Start page  -->
+        <div class="introduction"> 
+            <img src="/assets/other-stuff/photo.jpeg" alt="Myself" id="me">
+            <div class="about">
+                <h1 class="about-title">About<span>.me</span></h1>
+                <p class="about-description">Hi! I'm Matheus, a researcher, software engineer and USP student. This
+                    is a
+                    website were
+                    I
+                    present my projects and information
+                    regarding my abilities. Hope you like it!</p>
+            </div>
+        </div> 
+        <canvas id="canvas">
+            <!-- Soon to be tesseract -->
+        </canvas>
+
+    </section>
+
+    <!-- Navigation bar -->
+    <div class="container-fluid nav-bar">
+        <div class="row">
+            <a class="col-md-1">MatheusO</a>
+            <a class="col-md-7"></a>
+            <a class="col-md-1">Home</a>
+            <a class="col-md-1">Projects</a>
+            <a class="col-md-1">Skills</a>
+            <a class="col-md-1">Contact</a>
+        </div> 
+    </div>
+
+    <!-- Page content   -->
+    <div class="content">
+        <!-- Story -->
+        <section class="story">
+            <div class="left-column">
+                <div class="interests">
+                    <h1>My interests</h1>
+                    <p>I am interested mainly in front-end, although I love Artificial Inteligence. Robots are the
+                        future and I make
+                        sure to keep up with new artificial inteligence techniques. Love Science and everything around
+                        it, especially
+                        space travel!</p>
+                </div>
+                <div class="objectives">
+                    <h1>But what are my objectives?</h1>
+                    <p>My main objective right now is exploring my options, I want to help people and find myself in the
+                        process. That's
+                        also a pretty cool way to improve myself and get some experience!</p>
+                </div>
+                <div class="personal-development">
+                    <h1>What I am actually doing right now</h1>
+                    <p>I am actually on a exchange program, and working for Franhofer IESE, I am exploring what I
+                        can and
+                        learning as much as possible</p>
+                </div>
+                <div class="building">
+                    <h1>Let's build stuff</h1>
+                    <p>I believe that the best way to enhance myself and help others is building a new idea or starting
+                        a project like
+                        developing a site for example ;)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="projects">
+            <h1>Projects I've worked <span>on</span></h1>
+            <ul>
+                <li class="imagesGrid">
+                    <img src="assets/projects/matheusode.png" alt="matheusode.me" />
+                    <p>
+                        This is the website you're on right now.<a
+                            href="https://www.github.com/MatheusOde/matheusode.me" target="_blank"> Check the code right
+                            here!</a>
+                    </p>
+                </li>
+
+                <li class="imagesGrid">
+                    <img src="assets/projects/skooter.png" alt="skooter" />
+                    <p>
+                        This is a game developed in java, from scratch for my OOP class. It's
+                        called skooter and it's really old!<a href="https://github.com/MatheusOde/oldJavaGame"
+                            target="_blank"> Check it out here!</a>
+                    </p>
+                </li>
+
+                <li class="imagesGrid">
+                    <img src="assets/projects/eveio.png" alt="eveio" />
+                    <p>
+                        This is another website made in vue.js, it was made in a month and I had to learn vue.js for the
+                        first time
+                        in a month.<a href="https://github.com/MatheusOde/eCommerce_eVeio" target="_blank"> This project
+                            can be found here</a>
+                    </p>
+                </li class="imagesGrid">
+
+                <li class="imagesGrid">
+                    <img src="assets/projects/pong.png" alt="pong" />
+                    <p>
+                        This project is my attempt at making AI's in python to play the game in many ways.<a
+                            href="https://github.com/MatheusOde/pongWithAI" target="_blank"> Click to know more!</a>
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills">
+            <h1>I already <span>use:</span></h1>
+            <ul>
+                <li class="skillsGrid">
+                    <img src="/assets/skills/html5.png" alt="HTML5">
+                </li>
+                <li class="skillsGrid">
+                    <img src="/assets/skills/css3.png" alt="CSS3">
+                </li>
+                <li class="skillsGrid">
+                    <img src="/assets/skills/javascript.png" alt="JavaScript">
+                </li>
+                <li class="skillsGrid">
+                    <img src="/assets/skills/vuejs.png" alt="Vue.js">
+                </li>
+                <li class="skillsGrid">
+                    <img src="/assets/skills/c.png" alt="C">
+                </li>
+                <li class="skillsGrid">
+                    <img src="/assets/skills/java.png" alt="Java">
+                </li>
+                <li class="skillsGrid">
+                    <img src="/assets/skills/python.png" alt="Python">
+                </li>
+                <li class="skillsGrid">
+                    <img src="/assets/skills/c++.png" alt="C++">
+                </li>
+                <li class="skillsGrid">
+                    <img src="/assets/skills/github.png" alt="GitHub">
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid footer">
+        <div class="row">
+            <a class="col-md-1">
+                <img src="" alt="">
+            </a>
+            <a class="col-md-1">
+                <img src="" alt="">
+            </a>
+
+            <a class="col-md-1">
+                <img src="" alt="">
+            </a>
+
+            <a class="col-md-1">
+                <img src="" alt="">
+            </a>
 
 
+            <a class="col-md-1">
+                <img src="" alt="">
+            </a>
+            <a class="col-md-7"></a>
+        </div> 
+    </div>
 </body>
 
 </html>

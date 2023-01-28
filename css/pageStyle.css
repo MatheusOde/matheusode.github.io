@@ -1,0 +1,24 @@
+:root {
+  --neon-purple: rgb(112, 0, 187);
+  --neon-purple-effect: 0 0 2px rgba(112, 0, 187, 0.452),
+    0 0 5px rgba(112, 0, 187, 0.493), 0 0 10px rgb(112, 0, 187);
+  --neon-blue: rgb(62, 62, 255);
+  --neon-blue-effect: 0 0 2px rgba(41, 41, 255, 0.788),
+    0 0 5px rgba(48, 48, 248, 0.719), 0 0 10px rgb(48, 48, 252);
+}
+
+html, body {
+  overflow: auto;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+}
+
+.content {
+  display: block;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}/*# sourceMappingURL=pageStyle.css.map */
