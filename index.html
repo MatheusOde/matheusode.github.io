@@ -41,7 +41,14 @@
             <a href="#introduction" id="home-btn">Home</a>
             <a href="#projects" id="projects-btn">Projects</a>
             <a href="#skills" id="skills-btn">Skills</a>
-            <a href="#" id="contact-btn">Contact</a>
+            <a id="contact-btn" onclick="openPopup()">Contact</a>
+            <div id="contact-popup" class="popup">
+                <span class="close" onclick="closePopup()">X
+                </span>
+                <h1>Contact Information</h1>
+                <p>Email: matheusode@gmail.com</p>
+                <p>Phone number: +5516994242382</p>
+            </div>
         </div>
         <button onclick="switchMenu()" class="dropdown-btn">
             <img src="/assets/site-UI/menu.svg" class="menu-btn" alt="menu button">
